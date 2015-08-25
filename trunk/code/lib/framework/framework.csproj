@@ -1,0 +1,94 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{766A44C2-DC91-4183-B001-25A50D5450B1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>framework</RootNamespace>
+    <AssemblyName>framework</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="list\common\CGetDataCommon.cs" />
+    <Compile Include="list\common\CManageError.cs" />
+    <Compile Include="list\common\CreateImageRandom.cs" />
+    <Compile Include="list\common\CRSA.cs" />
+    <Compile Include="list\common\CTime.cs" />
+    <Compile Include="list\common\CValidate.cs" />
+    <Compile Include="list\common\CvalidateImageForPost.cs" />
+    <Compile Include="list\common\MD5.cs" />
+    <Compile Include="list\common\RSA.cs" />
+    <Compile Include="list\dynamicviewhelper\CDymanicviewArticles.cs" />
+    <Compile Include="list\dynamicviewhelper\CdymanicViewCom.cs" />
+    <Compile Include="list\dynamicviewhelper\CDymanicViewMobile.cs" />
+    <Compile Include="list\dynamicviewhelper\CDynamicviewhelper.cs" />
+    <Compile Include="list\dynamicviewhelper\CDynamicviewHelperXmlLanguageCode.cs" />
+    <Compile Include="list\dynamicviewhelper\CDynamicviewHelperXmlLanguageContent.cs" />
+    <Compile Include="list\dynamicviewhelper\CDynamicViewListOrder.cs" />
+    <Compile Include="list\dynamicviewhelper\CDynamicViewPriceSearch.cs" />
+    <Compile Include="list\dynamicviewhelper\CDynamicViewProBestSell.cs" />
+    <Compile Include="list\dynamicviewhelper\CDynamicViewProduct.cs" />
+    <Compile Include="list\dynamicviewhelper\CDynamicViewProMainPage.cs" />
+    <Compile Include="list\dynamicviewhelper\CDynamicViewUser.cs" />
+    <Compile Include="list\lang\CContentLanguageShow.cs" />
+    <Compile Include="list\lang\Clanguage.cs" />
+    <Compile Include="list\bean\ProInCart.cs" />
+    <Compile Include="list\lang\CLanguageSupport.cs" />
+    <Compile Include="list\lang\Language.cs" />
+    <Compile Include="list\lang\Language_content.cs" />
+    <Compile Include="list\lang\Lang_code.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\common\common.csproj">
+      <Project>{2CD6B29B-F8B8-4693-B3D7-C813BDEA3667}</Project>
+      <Name>common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\facade\facade.csproj">
+      <Project>{DEFC98A6-FC49-42CF-B625-16669719CD56}</Project>
+      <Name>facade</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

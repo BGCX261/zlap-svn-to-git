@@ -1,0 +1,21 @@
+F:\sunglb\project_working\laptop\code\lib\dataaccess\bin\Debug\dataaccess.dll
+F:\sunglb\project_working\laptop\code\lib\dataaccess\bin\Debug\dataaccess.pdb
+F:\sunglb\project_working\laptop\code\lib\dataaccess\bin\Debug\common.dll
+F:\sunglb\project_working\laptop\code\lib\dataaccess\bin\Debug\common.pdb
+F:\sunglb\project_working\laptop\code\lib\dataaccess\obj\Debug\ResolveAssemblyReference.cache
+F:\sunglb\project_working\laptop\code\lib\dataaccess\obj\Debug\dataaccess.dll
+F:\sunglb\project_working\laptop\code\lib\dataaccess\obj\Debug\dataaccess.pdb
+C:\data\project_working\laptop\code\lib\dataaccess\bin\Debug\dataaccess.dll
+C:\data\project_working\laptop\code\lib\dataaccess\bin\Debug\dataaccess.pdb
+C:\data\project_working\laptop\code\lib\dataaccess\bin\Debug\common.dll
+C:\data\project_working\laptop\code\lib\dataaccess\bin\Debug\common.pdb
+C:\data\project_working\laptop\code\lib\dataaccess\obj\Debug\ResolveAssemblyReference.cache
+C:\data\project_working\laptop\code\lib\dataaccess\obj\Debug\dataaccess.dll
+C:\data\project_working\laptop\code\lib\dataaccess\obj\Debug\dataaccess.pdb
+D:\My Sourcecode\Website\laptop\code\lib\dataaccess\bin\Debug\dataaccess.dll
+D:\My Sourcecode\Website\laptop\code\lib\dataaccess\bin\Debug\dataaccess.pdb
+D:\My Sourcecode\Website\laptop\code\lib\dataaccess\bin\Debug\common.dll
+D:\My Sourcecode\Website\laptop\code\lib\dataaccess\bin\Debug\common.pdb
+D:\My Sourcecode\Website\laptop\code\lib\dataaccess\obj\Debug\ResolveAssemblyReference.cache
+D:\My Sourcecode\Website\laptop\code\lib\dataaccess\obj\Debug\dataaccess.dll
+D:\My Sourcecode\Website\laptop\code\lib\dataaccess\obj\Debug\dataaccess.pdb

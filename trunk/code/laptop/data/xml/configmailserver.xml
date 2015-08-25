@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<server>
+  <host>210.245.124.99</host>
+  <from>maytinhxachtay@maytinhxachtay.com</from>
+  <displayname>MayTinhXachTay.com</displayname>
+  <port>25</port>
+  <domain>www.maytinhxachtay.com</domain>
+  <username>username</username>
+  <password>password</password>
+  <website>http://www.maytinhxachtay.com</website>
+</server>

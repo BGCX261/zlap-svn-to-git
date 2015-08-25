@@ -1,0 +1,1083 @@
+From: <Saved by Windows Internet Explorer 7>
+Subject: Pictures
+Date: Wed, 5 Dec 2007 17:51:15 +0700
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_0000_01C83767.6E6B63F0"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.2869
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_01C83767.6E6B63F0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://xlsgen.arstdesign.com/core/pictures.html
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Pictures</TITLE>
+<META http-equiv=3DContent-Type content=3D"text/html; =
+charset=3Diso-8859-1"><LINK=20
+href=3D"http://xlsgen.arstdesign.com/xlsgen.css" type=3Dtext/css =
+rel=3Dstylesheet>
+<META content=3D"MSHTML 6.00.5730.13" name=3DGENERATOR></HEAD>
+<BODY>
+<TABLE width=3D"100%">
+  <TBODY>
+  <TR bgColor=3D#eeeeee>
+    <TD><IMG height=3D2 =
+src=3D"http://xlsgen.arstdesign.com/core/transp.gif"=20
+      width=3D"100%"></TD></TR>
+  <TR>
+    <TD class=3DSection><A =
+href=3D"http://xlsgen.arstdesign.com/">xlsgen</A> &gt;=20
+      overview &gt; Pictures</TD></TR>
+  <TR bgColor=3D#eeeeee>
+    <TD><IMG height=3D2 =
+src=3D"http://xlsgen.arstdesign.com/core/transp.gif"=20
+      width=3D"100%"></TD></TR></TBODY></TABLE>
+<P>Pictures are a convenient type of object that adds up to the =
+formatting of=20
+your Excel workbooks. A typical usage of pictures is company =
+logos.</P><IMG=20
+src=3D"http://xlsgen.arstdesign.com/core/picsupport.gif"><BR><I>Rich =
+support for=20
+pictures in <SPAN class=3Dxlsgen>xlsgen</SPAN></I><BR>
+<P>&nbsp;</P>
+<P><SPAN class=3Dxlsgen>xlsgen</SPAN> supports all major picture file =
+formats=20
+including :</P>
+<UL>
+  <LI>bmp (Windows Bitmap file)=20
+  <LI>gif (Graphics Interchange Format)=20
+  <LI>jpg, jpeg (Joint Pictures Expert Group)=20
+  <LI>png (Portable Network Graphics)=20
+  <LI>wmf (Windows metafile)=20
+  <LI>emf (Enhanced Windows metafile) </LI></UL>
+<P>Each Excel workbook supports one or more pictures in each worksheet. =
+There is=20
+no known limitations in the amount of pictures you can add.</P>
+<P>Pictures are added by embedding a blob inside the Excel file. Also, =
+<SPAN=20
+class=3Dxlsgen>xlsgen</SPAN> factorizes pictures and stores the same =
+picture only=20
+once, which helps keep the file low in size.</P>
+<P>Each time a picture is inserted, you can accurately position it in =
+any=20
+worksheet. The user is provided a pixel-precise API to position a =
+picture,=20
+including :</P>
+<UL>
+  <LI>(row,col) pairs to model the top-left and bottom-right corners=20
+  <LI>optional scale ratios=20
+  <LI>optional offsets for each corner so that a picture can live =
+outside the=20
+  Excel grid </LI></UL>
+<P>Below is a drawing explaining how it works :</P><IMG=20
+src=3D"http://xlsgen.arstdesign.com/core/picsupport2.gif"><BR><I>Position=
+ing a=20
+picture in the Excel grid</I><BR>
+<P>There are two separate programming interfaces to insert a picture. =
+The main=20
+and richest one is through the <A=20
+href=3D"http://xlsgen.arstdesign.com/reference/IXlsPictures.html">Picture=
+s</A>=20
+collection. The other interface is through the <CODE>NewPicture</CODE> =
+method of=20
+the <A=20
+href=3D"http://xlsgen.arstdesign.com/reference/IXlsWorksheet.html">IXlsWo=
+rksheet</A>=20
+object.</P>
+<P>&nbsp;</P>
+<H4>Inserting a picture</H4>
+<P>When inserting a picture, what's really only needed is a filename and =
+the=20
+top-left corner where to insert it. When doing so, <SPAN=20
+class=3Dxlsgen>xlsgen</SPAN> inserts the picture at a normal scale and =
+calculates=20
+the offsets with the Excel grid. If you'd like to put more constraints, =
+you are=20
+free to use some of the options of the <A=20
+href=3D"http://xlsgen.arstdesign.com/reference/IXlsPicture.html">picture<=
+/A>=20
+object including the ability to :</P>
+<UL>
+  <LI>define the offsets manually=20
+  <LI>define the scale manually, in each direction=20
+  <LI>define whether or not the picture should be inserted with a locked =
+aspect=20
+  ratio which is used by Excel itself when the user stretches the =
+picture in=20
+  Excel. Note that this setting does not affect the <SPAN=20
+  class=3Dxlsgen>xlsgen</SPAN> offset calculations done for the =
+insertion.</LI></UL>
+<P>Here are two examples :</P>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD><SPAN class=3Dlanguage>Java code</SPAN></TD></TR>
+  <TR>
+    <TD><PRE>
+// insert picture at B3
+XlsPicture pic1 =3D wksht.getPictures().Add("picture.gif");
+pic1.putLeftColumn(2);
+pic1.putTopCell(3);
+
+wksht.putLabel(3,6, "picture inserted at default size");
+
+// insert picture at B15, double its size, unlocked aspect ratio
+XlsPicture pic2 =3D wksht.getPictures().Add("picture.gif");
+pic2.putLeftColumn(2);
+pic2.putTopCell(15);
+pic2.putScaleWidth(200);
+pic2.putScaleHeight(200);
+pic2.putLockAspectRatio(false);
+
+wksht.putLabel(11,6, "picture inserted at twice its size");
+wksht.putLabel(12,6, "with an unlocked aspect ratio when the user =
+stretches it.");
+
+</PRE></TD></TR></TBODY></TABLE>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD><SPAN class=3Dlanguage>VB code</SPAN></TD></TR>
+  <TR>
+    <TD><PRE>
+' insert picture at B3
+Dim pic1 As IXlsPicture
+Set pic1 =3D wksht.Pictures.Add("picture.gif")
+pic1.LeftColumn =3D 2
+pic1.TopCell =3D 3
+
+wksht.Label(3, 6) =3D "picture inserted at default size"
+
+' insert picture at B15, double its size, unlocked aspect ratio
+Dim pic2 As IXlsPicture
+Set pic2 =3D wksht.Pictures.Add("picture.gif")
+pic2.LeftColumn =3D 2
+pic2.TopCell =3D 15
+pic2.ScaleWidth =3D 200
+pic2.ScaleHeight =3D 200
+pic2.LockAspectRatio =3D False
+
+wksht.Label(11, 6) =3D "picture inserted at twice its size"
+wksht.Label(12, 6) =3D "with an unlocked aspect ratio when the user =
+stretches it."
+
+</PRE></TD></TR></TBODY></TABLE>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD><SPAN class=3Dlanguage>C# code</SPAN></TD></TR>
+  <TR>
+    <TD><PRE>
+// insert picture at B3
+IXlsPicture pic1 =3D wksht.Pictures.Add("picture.gif");
+pic1.LeftColumn =3D 2;
+pic1.TopCell =3D 3;
+
+wksht.set_Label(3,6, "picture inserted at default size");
+
+// insert picture at B15, double its size, unlocked aspect ratio
+IXlsPicture pic2 =3D wksht.Pictures.Add("picture.gif");
+pic2.LeftColumn =3D 2;
+pic2.TopCell =3D 15;
+pic2.ScaleWidth =3D 200;
+pic2.ScaleHeight =3D 200;
+pic2.LockAspectRatio =3D 0;
+
+wksht.set_Label(11,6, "picture inserted at twice its size");
+wksht.set_Label(12,6, "with an unlocked aspect ratio when the user =
+stretches it.");
+
+</PRE></TD></TR></TBODY></TABLE>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD><SPAN class=3Dlanguage>C/C++ code</SPAN></TD></TR>
+  <TR>
+    <TD><PRE>
+// insert picture at B3
+xlsgen::IXlsPicturePtr pic1 =3D =
+wksht-&gt;Pictures-&gt;Add(L"picture.gif");
+pic1-&gt;LeftColumn =3D 2;
+pic1-&gt;TopCell =3D 3;
+
+wksht-&gt;Label[3][6] =3D L"picture inserted at default size";
+
+// insert picture at B15, double its size, unlocked aspect ratio
+xlsgen::IXlsPicturePtr pic2 =3D =
+wksht-&gt;Pictures-&gt;Add(L"picture.gif");
+pic2-&gt;LeftColumn =3D 2;
+pic2-&gt;TopCell =3D 15;
+pic2-&gt;ScaleWidth =3D 200;
+pic2-&gt;ScaleHeight =3D 200;
+pic2-&gt;LockAspectRatio =3D FALSE;
+
+wksht-&gt;Label[11][6] =3D L"picture inserted at twice its size";
+wksht-&gt;Label[12][6] =3D L"with an unlocked aspect ratio when the user =
+stretches it.";
+
+</PRE></TD></TR></TBODY></TABLE>
+<P>&nbsp;</P>
+<H4>The old way of inserting a picture</H4>
+<P>(kept only for backwards compatibility reason)</P>
+<P>Let's assume your top-left corner would be (r=3D4,c=3D3) and your =
+bottom-right=20
+corner would be (r=3D9, c=3D4).</P>
+<P>The following code snippets add a picture in the first worksheet.</P>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD><SPAN class=3Dlanguage>VB code</SPAN></TD></TR>
+  <TR>
+    <TD><PRE>
+Dim wksht1 As IXlsWorksheet
+Set wksht1 =3D wbk.AddWorksheet("sheet1")
+
+' add a picture from location C:\mypicture.jpeg
+' top-left corner =3D (4,3)
+' bottom-right corner =3D (9,4)
+' topoffset =3D 0 (in 1440_ith units)
+' leftoffset =3D 300 (in 1440_ith units)
+' bottomoffset =3D 0 (in 1440_ith units)
+' rightoffset =3D 600 (in 1440_ith units)
+
+wksht1.NewPicture("C:\mypicture.jpeg", 4,3, 9,4, 0,300,0,600)
+
+
+</PRE></TD></TR></TBODY></TABLE>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD><SPAN class=3Dlanguage>C# code</SPAN></TD></TR>
+  <TR>
+    <TD><PRE>
+IXlsWorksheet wksht1 =3D wbk.AddWorksheet( "sheet1" );
+
+// work with this worksheet
+
+// add a picture from location C:\mypicture.jpeg
+// top-left corner =3D (4,3)
+// bottom-right corner =3D (9,4)
+// topoffset =3D 0 (in 1440_ith units)
+// leftoffset =3D 300 (in 1440_ith units)
+// bottomoffset =3D 0 (in 1440_ith units)
+// rightoffset =3D 600 (in 1440_ith units)
+
+wksht1.NewPicture(@"C:\mypicture.jpeg", 4,3, 9,4, 0,300,0,600);
+
+</PRE></TD></TR></TBODY></TABLE>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD><SPAN class=3Dlanguage>C/C++ code</SPAN></TD></TR>
+  <TR>
+    <TD><PRE>
+xlsgen::IXlsWorksheetPtr wksht1;
+wksht1 =3D wbk-&gt;AddWorksheet( L"sheet1" );
+
+// add a picture from location C:\mypicture.jpeg
+// top-left corner =3D (4,3)
+// bottom-right corner =3D (9,4)
+// topoffset =3D 0 (in 1440_ith units)
+// leftoffset =3D 300 (in 1440_ith units)
+// bottomoffset =3D 0 (in 1440_ith units)
+// rightoffset =3D 600 (in 1440_ith units)
+
+wksht1-&gt;NewPicture("C:\\mypicture.jpeg", 4,3, 9,4, 0,300,0,600);
+
+</PRE></TD></TR></TBODY></TABLE>
+<P>The programming interface of worksheets is described <A=20
+href=3D"http://xlsgen.arstdesign.com/reference/IXlsWorksheet.html">here</=
+A>.</P>
+<P>&nbsp;</P>
+<H4>Inserting a picture from a memory buffer</H4>
+<P>It is also possible to pass a memory buffer and a picture file type =
+instead=20
+of a file, to accomodate scenarios where everything is done in memory. =
+Here are=20
+examples how to do so in VB and C/C++ :</P>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD><SPAN class=3Dlanguage>Java code</SPAN></TD></TR>
+  <TR>
+    <TD><PRE>
+<FONT color=3Dgreen>// In this example, we read an existing file and =
+make it a buffer in memory</FONT>
+<FONT color=3Dgreen>// for the sake of providing a full example, but it =
+works as well if you have a buffer in memory</FONT>
+<FONT color=3Dgreen>// passed by some other function in your =
+application.</FONT>
+
+XlsEngine engine =3D new XlsEngine("./../../../xlsgen.dll");
+
+XlsWorkbook workbook =3D engine.New("myfile.xls");
+
+XlsWorksheet wksht =3D workbook.AddWorksheet("sheet1");
+
+try
+{
+  FileInputStream fis =3D new FileInputStream("IMG_2837.jpg");
+  int fileSize =3D fis.available();
+  byte[] bs =3D new byte[fileSize];
+
+  fis.read(bs);
+
+  fis.close();
+
+  XlsLockBytes lockbytes =3D new XlsLockBytes();
+  int lb =3D lockbytes.GetILockBytes(bs);
+
+  <FONT color=3Dgreen>' Insert the picture by passing :</FONT>
+  <FONT color=3Dgreen>'   - the ILockbytes buffer</FONT>
+  <FONT color=3Dgreen>'   - the picture type</FONT>
+  <FONT color=3Dgreen>'   - the location (row1, col1, row2, col2) and =
+offsets</FONT>
+  wksht.NewPictureInMemory(lb, xlsgen.picturetype_jpeg, 1,4, 6,8, =
+0,0,0,0);
+}
+catch(Exception e)
+{
+  wksht.putLabel(1,2, "Memory picture insertion did not work");
+}
+
+workbook.Close();
+
+</PRE></TD></TR></TBODY></TABLE>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD><SPAN class=3Dlanguage>VB code</SPAN></TD></TR>
+  <TR>
+    <TD><PRE>
+<FONT color=3Dgreen>' In this example, we read an existing file and make =
+it a buffer in memory</FONT>
+<FONT color=3Dgreen>' for the sake of providing a full example, but it =
+works as well if you have a buffer in memory</FONT>
+<FONT color=3Dgreen>' passed by some other function in your =
+application.</FONT>
+
+<FONT color=3Dgreen>' Import a function that wraps the ILockBytes buffer =
+functionality</FONT>
+Declare Function GetLockBytesFromString Lib "comwrapper.dll" (ByVal s As =
+String, ByVal stringlen As Integer) As Long
+
+
+Public Sub Process()
+
+<FONT color=3Dgreen>' Read a picture IMG_2837.jpg</FONT>
+Dim Line As String * 4096
+Dim s As String
+
+Open "IMG_2837.jpg" For Binary Access Read As #1
+Do While Not EOF(1)
+Get #1, , Line
+s =3D s &amp; Line
+Loop
+Close #1
+
+<FONT color=3Dgreen>' Create a ILockBytes buffer from the picture =
+(stored in string s)</FONT>
+Dim ilockbytes As Long
+ilockbytes =3D GetLockBytesFromString(s, Len(s))
+
+<FONT color=3Dgreen>' Create an xlsgen engine instance</FONT>
+Dim engine As CoXlsEngine
+Set engine =3D CreateObject("ExcelGenerator.ARsTDesign")
+
+Dim wbk As IXlsWorkbook
+Set wbk =3D engine.New("sample.xls")
+
+Dim wksht As IXlsWorksheet
+Set wksht =3D wbk.AddWorksheet("sheet1")
+
+<FONT color=3Dgreen>' Insert the picture by passing :</FONT>
+<FONT color=3Dgreen>'   - the ILockbytes buffer</FONT>
+<FONT color=3Dgreen>'   - the picture type</FONT>
+<FONT color=3Dgreen>'   - the location (row1, col1, row2, col2) and =
+offsets</FONT>
+wksht.NewPictureInMemory ilockbytes, picturetype_jpeg, 2, 2, 5, 4, 0, 0, =
+0, 0
+
+<FONT color=3Dgreen>' Finalize the Excel file</FONT>
+wbk.Close
+
+</PRE></TD></TR></TBODY></TABLE>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD><SPAN class=3Dlanguage>C# code</SPAN></TD></TR>
+  <TR>
+    <TD><PRE>
+<FONT color=3Dgreen>// In this example, we read an existing file and =
+make it a buffer in memory</FONT>
+<FONT color=3Dgreen>// for the sake of providing a full example, but it =
+works as well if you have a buffer in memory</FONT>
+<FONT color=3Dgreen>// passed by some other function in your =
+application.</FONT>
+
+using System.IO;
+using System.Runtime.InteropServices;
+using xlsgen;
+
+[DllImport("ole32.dll")]
+static extern int CreateILockBytesOnHGlobal(IntPtr hGlobal,=20
+	bool fDeleteOnRelease,=20
+	out ILockBytes ppLockbytes);
+
+[Guid("0000000a-0000-0000-C000-000000000046"),=20
+	InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+	public interface ILockBytes
+{
+	int ReadAt([In] UInt64 olOffset, [In] IntPtr pv, [In] uint cb, [Out] =
+out uint pcbRead);
+	int WriteAt([In] UInt64 ulOffset, [In] IntPtr pv, [In] uint cb, [Out] =
+out uint pcbWritten);
+	int Flush();
+	int SetSize([In] UInt64 cb);
+	int LockRegion([In] UInt64 libOffset, [In] UInt64 cb, [In] int =
+dwLockType);
+	int UnlockRegion([In] UInt64 libOffset, [In] UInt64 cb, [In] int =
+dwLockType);
+	int Stat([Out, MarshalAs(UnmanagedType.Struct)] out STATSTG pstatstg, =
+[In] int grfStatFlag);
+}
+
+<FONT color=3Dgreen>// read a picture</FONT>
+
+System.IO.FileStream fs =3D new System.IO.FileStream("IMG_2837.jpg", =
+System.IO.FileMode.Open);
+
+int length =3D (int) fs.Length;
+
+byte[] fileBytes =3D new byte[length];
+
+BinaryReader br =3D new BinaryReader(fs);
+br.Read(fileBytes, 0, length);
+br.Close();
+fs.Close();
+
+<FONT color=3Dgreen>// make the buffer a native buffer</FONT>
+
+IntPtr buf =3D =
+System.Runtime.InteropServices.Marshal.AllocHGlobal(length);
+System.Runtime.InteropServices.Marshal.Copy(fileBytes, 0, buf, length);
+
+ILockBytes lockbytes =3D null;
+int hr =3D CreateILockBytesOnHGlobal(IntPtr.Zero, true, out lockbytes);
+
+UInt64 offset =3D 0;
+uint cbWritten =3D 0;
+
+lockbytes.WriteAt(offset, buf, (uint)length, out cbWritten);
+
+System.Runtime.InteropServices.Marshal.FreeHGlobal(buf);
+
+
+<FONT color=3Dgreen>// create a simple Excel file and add a picture from =
+a memory buffer</FONT>
+
+xlsgen.CoXlsEngineClass engine =3D new xlsgen.CoXlsEngineClass();
+
+xlsgen.IXlsWorkbook wbk =3D engine.New ("sample.xls");
+xlsgen.IXlsWorksheet wksht =3D wbk.AddWorksheet("Sheet1");
+
+System.IntPtr p =3D =
+System.Runtime.InteropServices.Marshal.GetIUnknownForObject(lockbytes);
+
+wksht.NewPictureInMemory((int)p, =
+xlsgen.enumPictureType.picturetype_jpeg,=20
+	2, 2, // top-left corner cell
+	5, 4, // bottom-right corner cell
+	0, //top
+	0, //left
+	0, //bottom
+	0 //right
+        );
+
+System.Runtime.InteropServices.Marshal.Release(p);
+
+System.Runtime.InteropServices.Marshal.ReleaseComObject(lockbytes);
+
+wbk.Close();
+
+System.Runtime.InteropServices.Marshal.ReleaseComObject(engine);
+
+</PRE></TD></TR></TBODY></TABLE>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD><SPAN class=3Dlanguage>C/C++ code</SPAN></TD></TR>
+  <TR>
+    <TD><PRE>
+<FONT color=3Dgreen>// In this example, we read an existing file and =
+make it a buffer in memory</FONT>
+<FONT color=3Dgreen>// for the sake of providing a full example, but it =
+works as well if you have a buffer in memory</FONT>
+<FONT color=3Dgreen>// passed by some other function in your =
+application.</FONT>
+
+xlsgen::IXlsEnginePtr engine( __uuidof(xlsgen::CoXlsEngine) );
+
+xlsgen::IXlsWorkbookPtr wbk;
+wbk =3D engine-&gt;New( L"sample.xls" );
+
+xlsgen::IXlsWorksheetPtr wksht =3D wbk-&gt;AddWorksheet("Sheet1");
+
+
+ILockBytes* lockbytes =3D NULL;
+
+HRESULT hr =3D CreateILockBytesOnHGlobal(NULL, // HGLOBAL
+                                       TRUE, // fDeleteOnRelease
+                                       &amp;lockbytes);
+
+FILE* f =3D fopen("IMG_2837.jpg", "rb"); // max 8KB for this buffer
+BYTE membuf[8192 + 1];
+int membuflen =3D 0;
+DWORD dwRead;
+
+while ((dwRead =3D fread(membuf + membuflen, 1, 4096, f)) &gt; 0)
+membuflen +=3D dwRead;
+
+fclose(f);
+
+ULARGE_INTEGER offset;
+offset.QuadPart =3D 0;
+LPBYTE pBuf =3D (LPBYTE) membuf;
+int buflen =3D membuflen;
+
+ULONG dwWritten;
+
+while (lockbytes-&gt;WriteAt(offset, pBuf + offset.QuadPart, min(16384, =
+buflen), &amp;dwWritten) =3D=3D 0)
+{
+  if (dwWritten =3D=3D 0)
+    break;
+
+  offset.QuadPart +=3D dwWritten;
+  buflen -=3D dwWritten;
+}
+
+wksht-&gt;NewPictureInMemory((long)lockbytes, xlsgen::picturetype_jpg,=20
+      2, 2, /* top-left corner cell*/
+      5, 4, /* bottom-right corner cell*/
+      0, /*top*/
+      0, /*left*/
+      0, /*bottom*/
+      0 /*right*/);
+
+
+lockbytes-&gt;Release();
+
+wbk-&gt;Close();
+
+</PRE></TD></TR></TBODY></TABLE>
+<P>&nbsp;</P>
+<H4>Introspecting existing pictures</H4>
+<P>Other than adding pictures, <SPAN class=3Dxlsgen>xlsgen</SPAN> has an =
+
+introspection programming interface which lets you query the position =
+and size=20
+of any existing picture in a file.</P>
+<P>Note that, because the same <A=20
+href=3D"http://xlsgen.arstdesign.com/reference/IXlsShapes.html">programmi=
+ng=20
+interface</A> actually works with other objects such as vector drawings =
+and=20
+charts, the main name of the programming interface is <I>Shapes</I>, not =
+
+<I>Pictures</I>.</P>
+<P>In the following scenario, what we do is get the position and size of =
+an=20
+existing shape, then insert a picture on top of that shape.</P>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD><SPAN class=3Dlanguage>VB code</SPAN></TD></TR>
+  <TR>
+    <TD><PRE>
+Dim wbk As IXlsWorkbook
+wbk =3D engine.Open("Book1_existingshapes.xls", "output.xls")
+
+Dim wksht As IXlsWorksheet
+wksht =3D wbk.WorksheetByIndex(2)
+
+Dim shape As IXlsShape
+shape =3D wksht.Shapes.Item(1)
+
+Dim nameShape As String
+nameShape =3D shape.Name
+
+Dim cellLeft
+Dim cellRight
+Dim cellTop
+Dim cellBottom
+
+cellLeft =3D shape.LeftColumn
+cellRight =3D shape.RightColumn
+cellTop =3D shape.TopCell
+cellBottom =3D shape.BottomCell
+
+Dim cellLeftOffset
+Dim cellRightOffset
+Dim cellTopOffset
+Dim cellBottomOffset
+
+cellLeftOffset =3D shape.LeftOffset
+cellRightOffset =3D shape.RightOffset
+cellTopOffset =3D shape.TopOffset
+cellBottomOffset =3D shape.BottomOffset
+
+' insert picture databar1.jpg using above information
+wksht.NewPicture("databar1.jpg", _
+                 cellTop, cellLeft, _
+                 cellBottom - 1, cellRight - 1, _
+                 cellTopOffset, cellLeftOffset, _
+                 -cellBottomOffset, -cellRightOffset)
+
+wbk.Close()
+
+</PRE></TD></TR></TBODY></TABLE>
+<P>&nbsp;</P>
+<H4>Deleting pictures or shapes</H4>
+<P>It is possible to delete one or more pictures in an existing file. =
+The <A=20
+href=3D"http://xlsgen.arstdesign.com/reference/IXlsShape.html">Shape</A> =
+object=20
+supports a <CODE>Delete</CODE> method.</P>
+<P>Thanks to the fact that Shapes are an abstraction for pictures, =
+vector=20
+drawings, charts, visual components, ...it is possible to use the same =
+method in=20
+order to delete those pictures, vector drawings, charts, visual =
+components,=20
+...</P>
+<P>&nbsp;</P><A name=3DExtractingPictures>
+<H4>Extracting pictures</H4></A>
+<P>Any picture in existing Excel files can be extracted. The extraction =
+is=20
+either directly written to a file, or to a memory block.</P>
+<UL>
+  <LI>Extract to a file : the <A=20
+  =
+href=3D"http://xlsgen.arstdesign.com/reference/IXlsShape.html">ExtractToF=
+ile</A>=20
+  method creates a file in the Windows temporary folder representing a =
+shape,=20
+  provided the shape is a picture. A client application can inspect the =
+shape=20
+  type, and act accordingly if it is a picture (shape type =3D 8). The =
+filename=20
+  suffix defines the file format, and client applications must be able =
+to handle=20
+  a number of file formats, including JPG, BMP, GIF, PNG, WMF and EMF.=20
+  <LI>Extract to a memory block : the <A=20
+  =
+href=3D"http://xlsgen.arstdesign.com/reference/IXlsShape.html">ExtractToM=
+emory</A>=20
+  method creates a copy of a shape of type picture in a regular Windows=20
+  ILockBytes interface. Contrary to the extraction to a file, the "file =
+format=20
+  identifier" is not supplied, it is up to the client application to use =
+an=20
+  appropriate imaging library (such as Windows GDI+, .NET System.Drawing =
+and so=20
+  on). The print functionality in xlsgen uses the extraction to memory =
+to print=20
+  pictures. </LI></UL>
+<P>&nbsp;</P>
+<H4>Changing the display order of pictures or shapes</H4>
+<P>It is possible to change the display order of any picture or shape. =
+The <A=20
+href=3D"http://xlsgen.arstdesign.com/reference/IXlsShape.html">Shape</A> =
+object=20
+supports a <CODE>BringToFront</CODE> method. By iterating this =
+mechanism, it is=20
+possible to redefine the display order of any picture or shape (shape =
+are=20
+pictures, vector drawings, charts, visual components, ...).</P>
+<P>&nbsp;</P><FONT face=3DArial size=3D-2><A=20
+href=3D"http://xlsgen.arstdesign.com/">xlsgen</A> documentation. =A9 =
+ARsT Design all=20
+rights reserved.</FONT> </BODY></HTML>
+
+------=_NextPart_000_0000_01C83767.6E6B63F0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://xlsgen.arstdesign.com/core/transp.gif
+
+R0lGODlhAQABALMAAAAAAP//////////////////////////////////////////////////////
+/////yH5BAEAAAAALAAAAAABAAEAAAQCEEQAOw==
+
+------=_NextPart_000_0000_01C83767.6E6B63F0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://xlsgen.arstdesign.com/core/picsupport.gif
+
+R0lGODlhTgHPAPcAAAIEBg4XCTYlCVIlCA4WHisnHS4rKQsUUSo7JxlhHShVU0pSWgCUPReeOwKw
+TyawX1pKG1paSlZSUltaW3Q0BmNjY4o/BLpWCH1+LXd1ZXFtb2uUa91rEcyQFcyEOOeRTiRJeH57
+dR0mpG1uoIiIhZSUf4yUjIyKq2ilhJickpycnKWljKWgnJytnImnupyc96upma2lpa2tpaWlta2t
+rb2znb21rbW1tbWtubW9tb29tca9ta2tvbGyzb29vcG9xxTGYSXGay/JcznKd0LGd1DLgV7OjHnX
+msbGJbXLlJbesqDitaneuaXnva3nvcbGvQDOzgDW1gDe3hDx8YvMzLXnxrXvxr3Gxr3exr3nzr3v
+zsbGxsbGzsbvzsbv1s7Gvd7eQs7OSt7eSs7OUtbWWufna+fnhOfOqc7Gxs7OxtbOxs7OztbOztbW
+zt7Wzs7v1tbW1tbe1tLS3tPT6d7W1t7e1t7e3ufe1tbs4N735+fe3ufn1ufn3ufn5+fn7+f35+9r
+CO9zCPdrCO9rEO9zFPdzCPdzEP9zCP97CO97EPd7EP97EO97GP+ECP+EEP+MEPd7GP97GP+EGP+M
+GO97Ifd7IfeEIf+EIe+EKfuEKf+MIf+MKe+EMfGIOfmMM/+MOf+UIfuQNf6gLPyWP/aVTP+cSv+i
+T/etSu+YWvScYPOlY/+pXvGibfuta++td/ite/+9Qv+1a/+1c/+1e++1iPe1hPe1jP+1hP/BUv/O
+a/y9g//ec/n5Zv/ue/zphP//hO+5mPe9lPe9nPfGnP+9jP+9lP/GjP/GlP/GnP/OnPfGpffOpf/G
+pf/OpffOrf/Orf/WlP/Wpf/enP/njP//jP/vlP/vnP//oO/OtffOtf/Otf/WrffWtffWvf/Wuf3k
+uffexv/exv/nxvfezu/n3v/ezv/n0v/n3u/n5//v1u/v3v/v3u/v5//v5/f3zv//3v/35+f37+/v
+7+/37+//7/fv7/f37//37///7+/v9+//9/f39/f/9//39///9////ywAAAAATgHPAAAI/gDp7BtI
+sKDBgwgTKlzIsKHDhxAjSpxIsaLFixgzakxIh50aNXrSpNFj46PJkyhTqlzJsqXLlzB11IFJs6ZN
+HXRs6tzJM2UaH256CrVpY+bQlx0/7tOxpo+Jo1Cj7kzhUarVkyr6XN3K80kMPlytmqgX9mRSNfto
+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
+
+------=_NextPart_000_0000_01C83767.6E6B63F0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://xlsgen.arstdesign.com/core/picsupport2.gif
+
+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
+
+------=_NextPart_000_0000_01C83767.6E6B63F0
+Content-Type: text/css;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://xlsgen.arstdesign.com/xlsgen.css
+
+BODY {
+	FONT-SIZE: 1em; COLOR: black; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+P {
+	FONT-SIZE: 0.9em; COLOR: black; FONT-FAMILY: Arial, Helvetica, =
+sans-serif
+}
+LI {
+	FONT-SIZE: 0.9em; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+PRE {
+	FONT-SIZE: 8pt; FONT-FAMILY: Verdana, sans-serif; BACKGROUND-COLOR: =
+#eeeeee
+}
+BLOCKQUOTE {
+	PADDING-LEFT: 0.1cm; BORDER-LEFT: #bcbfdc 1px solid
+}
+.Headline {
+	FONT-WEIGHT: bold; FONT-SIZE: 2em; COLOR: #0000ee; FONT-FAMILY: Arial, =
+Helvetica, sans-serif
+}
+.language {
+	FONT-WEIGHT: bold; FONT-SIZE: 0.6em; COLOR: #ee0000; FONT-FAMILY: =
+Arial, sans-serif; BACKGROUND-COLOR: #ffffff
+}
+.small {
+	FONT-WEIGHT: bold; FONT-SIZE: 0.6em; COLOR: #000000; FONT-FAMILY: =
+Arial, sans-serif; BACKGROUND-COLOR: #ffffff
+}
+.Subtitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 1.5em; COLOR: #0000dd; FONT-FAMILY: =
+Arial, Helvetica, sans-serif
+}
+.xlsgen {
+	FONT-SIZE: 1em; COLOR: #0000dd; FONT-STYLE: italic; FONT-FAMILY: Times =
+New Roman, Arial, Helvetica, sans-serif
+}
+.Section {
+	FONT-WEIGHT: bold; COLOR: #0000ee; FONT-FAMILY: Arial, Helvetica, =
+sans-serif
+}
+.scode {
+	COLOR: #5555cc; FONT-FAMILY: Courier, Helvetica, sans-serif
+}
+
+------=_NextPart_000_0000_01C83767.6E6B63F0--

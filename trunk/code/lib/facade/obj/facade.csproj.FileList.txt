@@ -1,0 +1,9 @@
+bin\Debug\facade.dll
+bin\Debug\facade.pdb
+bin\Debug\common.dll
+bin\Debug\dataaccess.dll
+bin\Debug\dataaccess.pdb
+bin\Debug\common.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\facade.dll
+obj\Debug\facade.pdb

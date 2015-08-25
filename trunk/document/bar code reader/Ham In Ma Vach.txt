@@ -1,0 +1,119 @@
+﻿Bạn tham khảo nhé. Đây là hàm in Mã vạch BarCode:
+
+Public Sub Printbarcode(ByRef vList As ListBox, ByRef vBarCodeX As BarcodeX, ByVal vCompanyName, ByVal vPrintAll As Boolean, ByVal vStartRow, ByVal vStartCol)
+On Error GoTo ErrP
+Dim hangso As Integer
+Dim rowbarcode As Integer
+Dim strTenSP As String
+
+Const cTextWidth = 84
+
+'Loai giay A4 - 5/line
+Const cSquare5H = 1186
+Const cSquare5W = 2315
+Const cSquare5PerLine = 5
+'Const cSquare5PerCol = 13
+
+'init
+Dim vSqW, vSqH
+vSqW = cSquare5W
+vSqH = cSquare5H
+
+vSoHang = gStempQuantity \ cSquare5PerLine
+
+rowbarcode = Val(vStartRow)
+cot = Val(vStartCol) - 1
+Printer.FontName = ".Vntime"
+
+'Tinh so luong tem can fai in
+vSL_in = 0
+i = 0
+While i < vList.ListCount
+vSL_in = vSL_in + vList.ItemData(i)
+i = i + 1
+Wend
+If Not vPrintAll And vSL_in > gStempQuantity Then vSL_in = gStempQuantity
+
+'Cau truc 1 item: xxxx-88888888-333-666666-Name. len(x x x) = gBarCodeLength
+'Khoi tao
+vSL_DaIn = 1
+vTensach = Right(vList.List(0), Len(vList.List(0)) - gBarCodeLength - 1 - 8 - 1 - 3 - 1 - 6 - 1)
+vDG = Round(DVal(Mid(vList.List(0), gBarCodeLength + 2, 8)), 0)
+vBarCode = Left(vList.List(0), gBarCodeLength)
+vBarCode1 = Left(vBarCode, gCustIDLength) & "." & Right(vBarCode, gPartNoLength) & "-" & Mid(vList.List(0), gBarCodeLength + 1 + 8 + 1 + 3 + 2, 6)
+
+If Not vPrintAll And vList.ItemData(0) > gStempQuantity Then
+vList.ItemData(0) = vList.ItemData(0) - gStempQuantity
+End If
+'-----------------------------
+For ii = 1 To vSL_in
+'In ten nha sach
+Printer.FontSize = 8
+Printer.CurrentX = (vSqW - Len(vCompanyName) * cTextWidth) \ 2 + cot * vSqW
+Printer.CurrentY = (rowbarcode - 1) * vSqH - 60
+Printer.Print " " & vCompanyName
+'In Ten sach
+Printer.CurrentX = 230 + cot * vSqW
+Printer.CurrentY = rowbarcode * vSqH - 1110
+If Len(Trim(vTensach)) > 20 Then
+strTenSP = Mid(Trim(vTensach), 1, 20) + "..."
+Else
+strTenSP = Trim(vTensach)
+End If
+
+Printer.Print " " & strTenSP
+
+'in ma vach
+vBarCodeX.Caption = vBarCode
+
+Printer.PaintPicture vBarCodeX.Picture, 170 + cot * vSqW, rowbarcode * vSqH - 920
+
+'In so vach
+Printer.CurrentX = 300 + cot * vSqW
+Printer.CurrentY = rowbarcode * vSqH - 610
+Printer.FontSize = 8
+Printer.Print " " & vBarCode1
+'In don gia
+Printer.CurrentX = 1180 + cot * vSqW
+Printer.CurrentY = rowbarcode * vSqH - 445
+Printer.FontSize = 7
+Printer.Print PriceFormat(str(vDG)) + " VN§"
+
+
+'Dieu huong
+cot = cot + 1
+If ii Mod 5 = 0 Then
+rowbarcode = rowbarcode + 1
+cot = 0
+End If
+
+If ii Mod gStempQuantity = 0 And rowbarcode > 1 Then
+rowbarcode = 1
+cot = 0
+If vPrintAll Then Printer.NewPage
+End If
+
+'Khoi tao lai ten hang
+vSL_DaIn = vSL_DaIn + 1
+If vSL_DaIn > vList.ItemData(0) Then 'Lay lai thong tin
+vList.RemoveItem (0)
+vSL_DaIn = 1
+'------------------ Lay TT --------------
+If vList.ListCount > 0 Then
+vTensach = Right(vList.List(0), Len(vList.List(0)) - gBarCodeLength - 1 - 8 - 1 - 3 - 1 - 6 - 1)
+vDG = Round(DVal(Mid(vList.List(0), gBarCodeLength + 2, 8)), 0)
+vBarCode = Left(vList.List(0), gBarCodeLength)
+vBarCode1 = Left(vBarCode, gCustIDLength) & "." & Right(vBarCode, gPartNoLength) & "-" & Mid(vList.List(0), gBarCodeLength + 1 + 8 + 1 + 3 + 2, 6)
+End If
+'-----------------------------
+End If
+Next ii
+Printer.EndDoc
+'Kiem tra so phan con lai chua in
+If vList.ListCount > 0 Then
+vList.ItemData(0) = vList.ItemData(0) - vSL_DaIn + 1
+End If
+Exit Sub
+ErrP:
+DisplayMessage True, "Err! " & Err.Description
+End Sub

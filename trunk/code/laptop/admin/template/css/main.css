@@ -1,0 +1,245 @@
+/* Css Administrator */
+body
+{
+	margin:0px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#000000;
+	border:0px;
+}
+.tlogin
+{
+	background-color:#F5F5F5;
+	color:#0000FF;
+	font-weight:bold;
+	font-size:14px;
+	height:26px;
+}
+.btdlogin
+{
+	border-width:1px;
+	border-color:#B0B0B0;
+	border-style:solid;
+	padding:5px;
+}
+.tbl
+{
+	background-color:#F3F3F3;
+	color:#FF702B;
+	font-weight:bold;
+	font-size:12px;
+	height:24px;
+	padding:3px;
+	text-align:center;
+}
+.btdbl
+{
+	border-width:1px;
+	border-color:#B0B0B0;
+	border-style:solid;
+	padding:3px;
+	line-height:20px;
+}
+.btdbl1
+{
+	border-width:1px;
+	border-color:#B0B0B0;
+	border-style:solid;
+	padding:7px;
+	line-height:20px;
+}
+.line
+{
+	background-color:#B1B1B1;
+	height:1px;
+}
+.theader
+{
+	color:#3300FF;
+	font-weight:bold;
+	font-size:16px;
+}
+.tfunc
+{
+	background-image:url(../img/arrow_right.png);
+	background-position:left center;
+	background-repeat:no-repeat;
+	padding-left:7px;
+	color:#0000FF;
+	cursor:pointer;
+}
+.tfunc a:link, .tfunc a:visited
+{
+	color:#0000FF;
+	text-decoration:none;
+}
+.tfunc a:hover
+{
+	color:#0000FF;
+	text-decoration:underline;
+}
+.tlist
+{
+	color:#000000;
+	font-weight:bold;
+	text-align:center;
+	background-color:#F5F5F5;
+}
+.text_page
+{
+	font-size:13px;
+	color:#0000FF;
+}	
+.text_page a:link,.text_page a:visited
+{
+	padding-left:4px;
+	padding-right:4px;
+	color:#0000FF;
+}
+.text_page a:hover
+{
+	padding-left:4px;
+	padding-right:4px;
+	color:#0000FF;
+}
+.text_page u
+{
+	padding-left:4px;
+	padding-right:4px;
+	color:#000000;
+	text-decoration:none;
+}
+.imgpro
+{
+	width:60px;
+	height:35px;
+	cursor:pointer;
+}
+.div_panel
+{
+	border-color:#C1C1C1;
+	background-color:#EFEFEF;
+	border-width:3px;
+	border-style:solid;
+	position:fixed;
+	position:absolute;
+	text-align:left;
+	padding:5px;
+	width:330px;
+}
+.button
+{
+	color:#000000;
+	background-color:#F9F9F9;
+	margin:2px;
+	margin-left:0px;
+	border-width:1px;
+	border-color:#666666;
+	height:20px;
+	border-style:solid;
+	width:80px;
+}
+.tUpload
+{
+	color:#F97C00;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:14px;
+	height:24px;
+	text-align:center;
+}
+.div_message
+{
+	color:#000000;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:12px;
+	height:20px;
+	text-align:left;
+}
+.div_img
+{
+	color:#FF0000;
+	font-weight:bold;
+	font-size:12px;
+}
+.divclose
+{
+	height:26px;
+	padding-top:5px;
+	text-align:center;
+}
+.txtSearch
+{
+	margin-left:0px;
+	margin-right:0px;
+	color:#0000FF;
+	width:120px;
+}
+.title1
+{
+	color:#0000FF;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:12px;
+}
+.title1 a:link, .title1 a:visited
+{
+	color:#0000FF;
+	text-decoration:none;
+}
+.title1 a:hover
+{
+	color:#0000FF;
+	text-decoration:underline;
+}
+.title2
+{
+	color:#000000;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:12px;
+}
+.title3
+{
+	color:#000000;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:11px;
+	padding-left:5px;
+}
+.title3 u
+{
+	color:#FF0000;
+	text-decoration:none;
+	font-size:12px;
+}
+.txtbox1
+{
+	color:#8080FF;
+	width:200px;
+}
+.txtbox2
+{
+	color:#8080FF;
+	width:450px;
+}
+.bgtr
+{
+	background-color:#F5F5F5;
+	height:28px;
+}
+.diverror
+{
+	border-width:1px;
+	border-style:solid;
+	border-color:#FF0000;
+	color:#FF0000;
+	padding:5px;
+}
+.spanbt
+{
+	color:#000000;
+	font-weight:bold;
+	cursor:pointer;
+}

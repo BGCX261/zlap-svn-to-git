@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <search>
+    <title>Sài Gòn</title>
+    <value>3,6,37,38,63,13,14,45,46,73,108,109,110,111,112,21,22,49,50,67,95,96,97,98,99</value>
+    <subs>
+      <sub text="236 Cao Thắng Nối Dài">3,6,37,38,63</sub>
+      <sub text="77 C Bùi Thị Xuân">13,14,45,46,73,108,109,110,111,112</sub>
+      <sub text="125 Trường Chinh">21,22,49,50,67</sub>
+      <sub text="153 Đăng Văn Bi">95,96,97,98,99</sub>
+    </subs>
+  </search>
+  <search>
+    <title>Hà Nội</title>
+    <value>4,8,27,28,39,40,53,54,62,69,106,2,9,35,36,61,105,29,30,55,56,70,107</value>
+    <subs>
+      <sub text="270 Đào Duy Anh">4,8,27,28,39,40,53,54,62,69,106</sub>
+      <sub text="32 Thái Hà">2,9,35,36,61,105</sub>
+      <sub text="245 Tôn Đức Thắng">29,30,55,56,70,107</sub>
+    </subs>
+  </search>
+  <search>
+    <title alert="144 Hàm Nghi">Đà Nẵng</title>
+    <value>11,12,43,44,65</value>
+  </search>
+  <search>
+    <title alert="102 Trần Hưng Đạo - Q Ninh Kiều">Cần Thơ</title>
+    <value>19,20,47,48,66</value>
+  </search>
+  <search>
+    <title alert="27 Lý Thường Kiệt - P. Lê Hồng Phong">Quy Nhơn</title>
+    <value>31,32,57,58,71</value>
+  </search>
+  <search>
+    <title alert="46 Thống Nhất, Phường Vạn Thạnh, TP Nha Trang">Nha Trang</title>
+    <value>80,81,82,83,84</value>
+  </search>
+  <search>
+    <title alert="46 Minh Khai, TP Vinh, Nghệ An">TP. Vinh</title>
+    <value>85,86,87,88,89</value>
+  </search>
+  <search>
+    <title alert="127c Lương Khánh Thiện, Phường Cầu Đất, Quận Ngô Quyền">Hải Phòng</title>
+    <value>90,91,92,93,94</value>
+  </search>
+  <search>
+    <title alert="232 Nguyễn Ái Quốc, phường Tân Tiến, TP Biên Hòa">Biên Hòa</title>
+    <value>100,101,102,103,104</value>
+  </search>
+  <search>
+    <title>Vũng tàu</title>
+    <value>113</value>
+  </search>
+</root>

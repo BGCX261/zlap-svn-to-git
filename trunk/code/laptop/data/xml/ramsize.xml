@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <search>
+    <title>Kích thước 256 MB</title>
+    <value>256</value>
+  </search>
+  <search>
+    <title>Kích thước 512 MB</title>
+    <value>512</value>
+  </search>
+  <search>
+    <title>Kích thước 768 MB</title>
+    <value>768</value>
+  </search>
+  <search>
+    <title>Kích thước 1 GB</title>
+    <value>1024</value>
+  </search>
+  <search>
+    <title>Kích thước 2 GB</title>
+    <value>2048</value>
+  </search>
+  <search>
+    <title>Kích thước 3 GB</title>
+    <value>3072</value>
+  </search>
+  <search>
+    <title>Kích thước 4 GB</title>
+    <value>4096</value>
+  </search>
+</root>

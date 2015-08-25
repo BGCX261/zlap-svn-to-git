@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendMail01", "http://localhost/SendMail/SendMail01.csproj", "{0F3AE2C8-E73B-4D39-A7AE-98310F2EDC83}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{0F3AE2C8-E73B-4D39-A7AE-98310F2EDC83}.Debug.ActiveCfg = Debug|.NET
+		{0F3AE2C8-E73B-4D39-A7AE-98310F2EDC83}.Debug.Build.0 = Debug|.NET
+		{0F3AE2C8-E73B-4D39-A7AE-98310F2EDC83}.Release.ActiveCfg = Release|.NET
+		{0F3AE2C8-E73B-4D39-A7AE-98310F2EDC83}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

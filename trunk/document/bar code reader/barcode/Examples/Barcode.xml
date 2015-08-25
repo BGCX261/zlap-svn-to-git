@@ -1,0 +1,1863 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Barcode</name>
+    </assembly>
+    <members>
+        <member name="T:Lesnikowski.Barcode.BarcodeFactory">
+            <summary>
+            Helper class for barcode creation.
+            </summary>
+        </member>
+        <member name="T:Lesnikowski.Barcode.IBarcodeFactory">
+            <summary>
+            Barcode factory interface.
+            </summary>
+            <remarks>
+            This interface is for COM support.
+            </remarks>
+        </member>
+        <member name="M:Lesnikowski.Barcode.IBarcodeFactory.CreateBarcode(Lesnikowski.Barcode.Symbology)">
+            <summary>
+            Creates new Barcode instance.
+            </summary>
+            <param name="symbology">Symbology of the barcode that will be created.</param>
+            <returns>new Barcode instance</returns>
+        </member>
+        <member name="M:Lesnikowski.Barcode.BarcodeFactory.GetBarcode(Lesnikowski.Barcode.Symbology)">
+            <summary>
+            Creates new Barcode instance.
+            </summary>
+            <param name="symbology">Symbology of the barcode that will be created.</param>
+            <returns>new Barcode instance</returns>
+        </member>
+        <member name="M:Lesnikowski.Barcode.BarcodeFactory.CreateBarcode(Lesnikowski.Barcode.Symbology)">
+            <summary>
+            Creates new Barcode instance.
+            </summary>
+            <remarks>
+            This method is for COM support.
+            </remarks>
+            <param name="symbology">Symbology of the barcode that will be created.</param>
+            <returns>Com interface to newly created barcode.</returns>
+        </member>
+        <member name="M:Lesnikowski.Barcode.BarcodeFactory.GetLicenseFolder">
+            <summary>
+            Returns folder path from which component 
+            will load license file (BarcodeLicense.xml).
+            </summary>
+            <returns>License file folder</returns>
+        </member>
+        <member name="T:Lesnikowski.Barcode.Symbology">
+            <summary>
+            Symbologies supported by <see cref="T:Lesnikowski.Barcode.BarcodeFactory"/>.
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.Symbology.EAN13">
+            <summary>
+            Used to create <see cref="T:Lesnikowski.Barcode.BarcodeEAN13"/> (0).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.Symbology.EAN8">
+            <summary>
+            Used to create <see cref="T:Lesnikowski.Barcode.BarcodeEAN8"/> (1).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.Symbology.S2of5">
+            <summary>
+            Used to create <see cref="T:Lesnikowski.Barcode.BarcodeS2of5"/> (2).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.Symbology.I2of5">
+            <summary>
+            Used to create <see cref="T:Lesnikowski.Barcode.BarcodeI2of5"/> (3).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.Symbology.Code39">
+            <summary>
+            Used to create <see cref="T:Lesnikowski.Barcode.Barcode39"/> (4).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.Symbology.Code39Ext">
+            <summary>
+            Used to create <see cref="T:Lesnikowski.Barcode.Barcode39Ext"/> (5).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.Symbology.Code128">
+            <summary>
+            Used to create <see cref="T:Lesnikowski.Barcode.Barcode128"/> (6).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.Symbology.EAN128">
+            <summary>
+            Used to create <see cref="T:Lesnikowski.Barcode.BarcodeEAN128"/> (7).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.Symbology.UPCA">
+            <summary>
+            Used to create <see cref="T:Lesnikowski.Barcode.BarcodeUPCA"/> (8).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.Symbology.UPCE">
+            <summary>
+            Used to create <see cref="T:Lesnikowski.Barcode.BarcodeUPCE"/> (9).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.Symbology.Code93">
+            <summary>
+            Used to create <see cref="T:Lesnikowski.Barcode.Barcode93"/> (10).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.Symbology.Code93Ext">
+            <summary>
+            Used to create <see cref="T:Lesnikowski.Barcode.Barcode93Ext"/> (11).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.Symbology.Code11">
+            <summary>
+            Used to create <see cref="T:Lesnikowski.Barcode.Barcode11"/> (12).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.Symbology.Codabar">
+            <summary>
+            Used to create <see cref="T:Lesnikowski.Barcode.BarcodeCodabar"/> (13).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.Symbology.Postnet">
+            <summary>
+            Used to create <see cref="T:Lesnikowski.Barcode.BarcodePostnet"/> (14).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.Symbology.Planet">
+            <summary>
+            Used to create <see cref="T:Lesnikowski.Barcode.BarcodePlanet"/> (15).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.Symbology.MSI">
+            <summary>
+            Used to create <see cref="T:Lesnikowski.Barcode.BarcodeMSI"/> (16).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.Symbology.Numly">
+            <summary>
+            Used to create <see cref="T:Lesnikowski.Barcode.BarcodeNumly"/> (17).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.Symbology.SSCC18">
+            <summary>
+            Used to create <see cref="T:Lesnikowski.Barcode.BarcodeSSCC18"/> (18).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.Symbology.EAN14">
+            <summary>
+            Used to create <see cref="T:Lesnikowski.Barcode.BarcodeEAN14"/> (19).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.Symbology.ITF14">
+            <summary>
+            Used to create <see cref="T:Lesnikowski.Barcode.BarcodeITF14"/> (20).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.Symbology.USPSSackLabel">
+            <summary>
+            Used to create <see cref="T:Lesnikowski.Barcode.BarcodeUSPSSackLabel"/> (21).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.Symbology.USPSTrayLabel">
+            <summary>
+            Used to create <see cref="T:Lesnikowski.Barcode.BarcodeUSPSTrayLabel"/> (22).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.Symbology.SwissPostParcel">
+            <summary>
+            Used to create <see cref="T:Lesnikowski.Barcode.BarcodeSwissPostParcel"/> (23).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.Symbology.PZN">
+            <summary>
+            Used to create <see cref="T:Lesnikowski.Barcode.BarcodePZN"/> (24).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.Symbology.OPC">
+            <summary>
+            Used to create <see cref="T:Lesnikowski.Barcode.BarcodeOPC"/> (25).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.Symbology.DeutschePostLeitcode">
+            <summary>
+            Used to create <see cref="T:Lesnikowski.Barcode.BarcodeDeutschePostLeitcode"/> (26).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.Symbology.DeutschePostIdentcode">
+            <summary>
+            Used to create <see cref="T:Lesnikowski.Barcode.BarcodeDeutschePostIdentcode"/> (27).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.Symbology.RoyalMail4State">
+            <summary>
+            Used to create <see cref="T:Lesnikowski.Barcode.BarcodeRoyalMail4State"/> (28).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.Symbology.SingaporePost4State">
+            <summary>
+            Used to create <see cref="T:Lesnikowski.Barcode.BarcodeSingaporePost4State"/> (29).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.Symbology.RoyalTntPostKix">
+            <summary>
+            Used to create <see cref="T:Lesnikowski.Barcode.BarcodeRoyalTntPostKix"/> (30).
+            </summary>
+        </member>
+        <member name="T:Lesnikowski.Barcode.Renderers.Renderer4State">
+            <summary>
+            0 full
+            1 ascender
+            2 descender
+            3 tracker
+            </summary>
+        </member>
+        <member name="M:Lesnikowski.Barcode.Renderers.RendererNW.Render(System.Drawing.Graphics,System.Int32,System.Int32,Lesnikowski.Barcode.BaseBarcode)">
+            <summary>
+            Draw specified data, starting at x.
+            </summary>
+            <param name="x"></param>
+            <param name="g">graphis to draw on to</param>
+            <param name="data">w=wide n=narrow</param>
+        </member>
+        <member name="F:Lesnikowski.Barcode.Renderers.TextAlign.Left">
+            <summary>
+            Left align (0).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.Renderers.TextAlign.Center">
+            <summary>
+            Center align (1).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.Renderers.TextAlign.Right">
+            <summary>
+            Right align (2).
+            </summary>
+        </member>
+        <member name="M:Lesnikowski.Barcode.Renderers.TextRenderer.Render(System.Drawing.Graphics,System.Int32,System.Int32,Lesnikowski.Barcode.BaseBarcode)">
+            <summary>
+            Draw specified text.
+            </summary>
+            <param name="g">graphis to draw on to</param>
+        </member>
+        <member name="T:Lesnikowski.Barcode.Supplement">
+            <summary>
+            Base class for 2-digit and 5-digit supplements.
+            </summary>
+        </member>
+        <member name="M:Lesnikowski.Barcode.Supplement.GetSupplement(System.String)">
+            <summary>
+            Creates 2-digit and 5-digit supplement object.
+            </summary>
+            <param name="number">number for supplement</param>
+            <returns>Supplement object</returns>
+        </member>
+        <member name="T:Lesnikowski.Barcode.Supplement2">
+            <summary>
+            EAN/UPC 2-digit supplement code
+            </summary>
+        </member>
+        <member name="T:Lesnikowski.Web.BarcodeControl">
+            <summary>
+            ASP.NET BarcodeControl
+            </summary>
+            <remarks>
+            To use BarcodeControl:
+            <list type="number">
+            <item>Create new ASP.NET project</item>
+            <item>Add new web.config file if you don't have one</item>
+            <item>Set up an HttpHandler in an ASP.NET web application -
+            add the following code to your web.config file, inside the &lt;system.web&gt; section:
+            <pre>
+                &lt;httpHandlers&gt;
+                    &lt;add verb="*" path="Barcode.axd" type="Lesnikowski.Web.BarcodeHttpHandler, Barcode"  /&gt;
+                &lt;/httpHandlers&gt;
+            </pre>
+            </item>
+            <item>
+            Add Barcode control to the toolbox:
+            <list type="bullet">
+            <item>use the right mouse button on toolbox </item>
+            <item>click 'Choose items...' or 'Add/Remove Items' </item>
+            <item>then click 'Browse' and point 'Barcode.dll' file</item>
+            </list>
+            </item>
+            <item>
+            Drag and drop BarcodeControl from toolbox to your webpage. 
+            This will add the references to Barcode.dll to your project. 
+            </item>
+            </list>
+            </remarks>
+        </member>
+        <member name="M:Lesnikowski.Web.BarcodeControl.Render(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            Sends <b>BarcodeControl</b> content to a provided HtmlTextWriter object.
+            </summary>
+            <param name="output">The HtmlTextWriter object that receives the server control content.</param>
+        </member>
+        <member name="P:Lesnikowski.Web.BarcodeControl.Symbology">
+            <summary>
+            Barcode symbology.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Web.BarcodeControl.ChecksumAdd">
+            <summary>
+            If true adds checksum character(s).
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Web.BarcodeControl.ChecksumVisible">
+            <summary>
+            If true checksum character(s) is visible in barcode text.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Web.BarcodeControl.Number">
+            <summary>
+            Barcode number. Separate supplement with ',' char.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Web.BarcodeControl.FontHeight">
+            <summary>
+            Fraction of Height which will be reserved for text label.
+            Between 0 and 1.0. Default is 0.15
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Web.BarcodeControl.FontStyle">
+            <summary>
+            Font style that will be used for any text on barcode image.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Web.BarcodeControl.FontName">
+            <summary>
+            Font name that will be used for any text on barcode image.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Web.BarcodeControl.LeftQuietZone">
+            <summary>
+            Gets or sets left quiet zone size.
+            If <see cref="P:Lesnikowski.Web.BarcodeControl.SetMarginsAutomatically"/> is set to true always returns this.NarrowBarWidth*9.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Web.BarcodeControl.RightQuietZone">
+            <summary>
+            Gets or sets right quiet zone size.
+            If <see cref="P:Lesnikowski.Web.BarcodeControl.SetMarginsAutomatically"/> is set to true always returns this.NarrowBarWidth*9.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Web.BarcodeControl.SetMarginsAutomatically">
+            <summary>
+            If set to true <see cref="P:Lesnikowski.Web.BarcodeControl.RightQuietZone"/> and <see cref="P:Lesnikowski.Web.BarcodeControl.LeftQuietZone"/> always return this.NarrowBarWidth*9.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Web.BarcodeControl.CustomText">
+            <summary>
+            Custom text which will be rendered instead of Number.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Web.BarcodeControl.NarrowBarWidth">
+            <summary>
+            Width of the narrow bar in rendered barcode in pixels.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Web.BarcodeControl.IsNumberVisible">
+            <summary>
+            True if text should be visible in rendered barcode.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Web.BarcodeControl.Rotation">
+            <summary>
+            Rotation of the rendered barcode.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Web.BarcodeControl.Height">
+            <summary>
+            Barcode height.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Web.BarcodeControl.ImageType">
+            <summary>
+            Barcode image format.
+            </summary>        
+        </member>
+        <member name="P:Lesnikowski.Web.BarcodeControl.XDpi">
+            <summary>
+            Horizontal resolution in dots per inch.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Web.BarcodeControl.YDpi">
+            <summary>
+            Vertical resolution in dots per inch.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Web.BarcodeControl.BearerBars">
+            <summary>
+            Bearer bars type.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Web.BarcodeControl.BearerBarsSize">
+            <summary>
+            Bearer bars size in pixels.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Web.BarcodeControl.BarColor">
+            <summary>
+            Bar color.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Web.BarcodeControl.ForeColor">
+            <summary>
+            Text color.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Web.BarcodeControl.BackColor">
+            <summary>
+            Back color.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Web.BarcodeControl.Ratio">
+            <summary>
+            Wide/narrow bar ratio.
+            </summary>
+        </member>
+        <member name="T:Lesnikowski.Web.BarcodeHttpHandler">
+            <summary>
+            HttpHandler for generating barcode images on the fly.
+            </summary>
+        </member>
+        <member name="T:Lesnikowski.Windows.BarcodeControl">
+            <summary>
+            Windows BarcodeControl.
+            </summary>
+            <remarks>
+            To use BarcodeControl:
+            <list type="number">
+            <item>Create new WindowsForms project</item>
+            <item>
+            Add Barcode control to the toolbox:
+            <list type="bullet">
+                <item>use the right mouse button on toolbox </item>
+                <item>click 'Choose items...' or 'Add/Remove Items' </item>
+                <item>then click 'Browse' and point 'Barcode.dll' file</item>
+            </list>
+            </item>
+            <item>
+            Drag and drop BarcodeControl from toolbox to your WindowsForm.
+            This will add the references to Barcode.dll to your project.
+            </item>
+            </list>
+            </remarks>    
+        </member>
+        <member name="M:Lesnikowski.Windows.BarcodeControl.GetBarcode">
+            <summary>
+            Returns a barcode object that is used to render barcode image.
+            </summary>
+            <returns>BaseBarcode objectff</returns>
+        </member>
+        <member name="M:Lesnikowski.Windows.BarcodeControl.Render">
+            <summary>
+            Creates new Bitmap with rendered Barcode.
+            </summary>
+            <remarks>
+            Uses <see cref="P:Lesnikowski.Windows.BarcodeControl.XDpi"/> as horizontal resolution in dots per inch, and
+            <see cref="P:Lesnikowski.Windows.BarcodeControl.YDpi"/> as vertical resolution in dots per inch.        
+            </remarks>
+            <returns>Bitmap with rendered Barcode.</returns>
+        </member>
+        <member name="M:Lesnikowski.Windows.BarcodeControl.Render(System.Drawing.Graphics,System.Int32,System.Int32)">
+            <summary>
+            Renders barcode on specified graphics object.
+            </summary>
+            <param name="g">Graphics object to render on it.</param>
+            <param name="x">X coordinate</param>
+            <param name="y">Y coordinate</param>
+        </member>
+        <member name="M:Lesnikowski.Windows.BarcodeControl.Save(System.String,Lesnikowski.Barcode.ImageType)">
+            <summary>
+            Creates new Bitmap with rendered Barcode and saves it to file of imageType format.
+            </summary>
+            <remarks>
+            Uses <see cref="P:Lesnikowski.Windows.BarcodeControl.XDpi"/> as horizontal resolution in dots per inch, and
+            <see cref="P:Lesnikowski.Windows.BarcodeControl.YDpi"/> as vertical resolution in dots per inch.        
+            </remarks>
+            <param name="imageType">Format of the output image</param>
+            <param name="fileName">Name of created file</param>
+        </member>
+        <member name="M:Lesnikowski.Windows.BarcodeControl.Save(System.IO.Stream,Lesnikowski.Barcode.ImageType)">
+            <summary>
+            Creates new Bitmap with rendered Barcode and saves it to the stream with specified type.
+            </summary>
+            <remarks>
+            Uses <see cref="P:Lesnikowski.Windows.BarcodeControl.XDpi"/> as horizontal resolution in dots per inch, and
+            <see cref="P:Lesnikowski.Windows.BarcodeControl.YDpi"/> as vertical resolution in dots per inch.        
+            </remarks>
+            <param name="imageType">Format of the output image</param>
+            <param name="stream">Stream</param>
+        </member>
+        <member name="M:Lesnikowski.Windows.BarcodeControl.SetControlSize">
+            <summary>
+            Sets control Size according to Rotation and barcode bitmap size.
+            </summary>
+        </member>
+        <member name="M:Lesnikowski.Windows.BarcodeControl.SetBarcodeSize">
+            <summary>
+            Sets barcode Height property according to Rotation and Control's size.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Windows.BarcodeControl.Symbology">
+            <summary>
+            Barcode symbology.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Windows.BarcodeControl.ChecksumAdd">
+            <summary>
+            If true adds checksum character(s).
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Windows.BarcodeControl.ChecksumVisible">
+            <summary>
+            If true checksum character(s) is visible in barcode text.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Windows.BarcodeControl.Number">
+            <summary>
+            Barcode number. Separate supplement with ',' char.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Windows.BarcodeControl.FontHeight">
+            <summary>
+            Fraction of Height which will be reserved for text label.
+            Between 0 and 1.0. Default is 0.15
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Windows.BarcodeControl.FontStyle">
+            <summary>
+            Font style that will be used for any text on barcode image.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Windows.BarcodeControl.FontName">
+            <summary>
+            Font name that will be used for any text on barcode image.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Windows.BarcodeControl.LeftQuietZone">
+            <summary>
+            Gets or sets quiet zone size.
+            If <see cref="P:Lesnikowski.Windows.BarcodeControl.SetMarginsAutomatically"/> is set to true always returns this.NarrowBarWidth*9.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Windows.BarcodeControl.RightQuietZone">
+            <summary>
+            Gets or sets quiet zone size.
+            If <see cref="P:Lesnikowski.Windows.BarcodeControl.SetMarginsAutomatically"/> is set to true always returns this.NarrowBarWidth*9.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Windows.BarcodeControl.SetMarginsAutomatically">
+            <summary>
+            If set to true <see cref="P:Lesnikowski.Windows.BarcodeControl.RightQuietZone"/> and <see cref="P:Lesnikowski.Windows.BarcodeControl.LeftQuietZone"/> always return this.NarrowBarWidth*9.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Windows.BarcodeControl.CustomText">
+            <summary>
+            Custom text which will be rendered instead of Number.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Windows.BarcodeControl.NarrowBarWidth">
+            <summary>
+            Width of the narrow bar in rendered barcode in pixels.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Windows.BarcodeControl.WideBarWidth">
+            <summary>
+            Width of the narrow bar in rendered barcode in pixels.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Windows.BarcodeControl.Ratio">
+            <summary>
+            Wide/narrow bar ratio.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Windows.BarcodeControl.IsNumberVisible">
+            <summary>
+            True if text should be visible in rendered barcode.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Windows.BarcodeControl.Rotation">
+            <summary>
+            Rotation of the rendered barcode.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Windows.BarcodeControl.XDpi">
+            <summary>
+            Horizontal resolution in dots per inch.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Windows.BarcodeControl.YDpi">
+            <summary>
+            Vertical resolution in dots per inch.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Windows.BarcodeControl.BearerBars">
+            <summary>
+            Bearer bars type.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Windows.BarcodeControl.BearerBarsSize">
+            <summary>
+            Bearer bars size in pixels.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Windows.BarcodeControl.BarColor">
+            <summary>
+            Text color
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Windows.BarcodeControl.ForeColor">
+            <summary>
+            Text color
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Windows.BarcodeControl.BackColor">
+            <summary>
+            Back color
+            </summary>
+        </member>
+        <member name="T:Lesnikowski.Barcode.Barcode11">
+            <summary>
+            Code 11 barcode class. Also known as USD-8.
+            </summary>
+            <remarks>
+            It is used primarily in labeling telecommunications equipment. 
+            It is variable length symbology.
+            It can encode following chars: "0123456789-".
+            </remarks>
+        </member>
+        <member name="T:Lesnikowski.Barcode.BaseBarcode">
+            <summary>
+            Base class for all barcode classes.
+            </summary>
+        </member>
+        <member name="T:Lesnikowski.Barcode.IBaseBarcode">
+            <summary>
+            COM interface to barcode class.
+            </summary>
+            <remarks>
+            This interface is for COM support.
+            </remarks>
+        </member>
+        <member name="M:Lesnikowski.Barcode.IBaseBarcode.GetLicenseFolder">
+            <summary>
+            Returns folder path from which component 
+            will load license file (BarcodeLicense.xml).
+            </summary>
+            <returns>License file folder</returns>
+        </member>
+        <member name="M:Lesnikowski.Barcode.IBaseBarcode.RenderHbitmap">
+            <summary>
+            Creates new Bitmap with rendered Barcode.
+            </summary>
+            <returns>Bitmap handle (HBITMAP) with rendered Barcode.</returns>
+        </member>
+        <member name="M:Lesnikowski.Barcode.IBaseBarcode.RenderHbitmap(System.Single,System.Single)">
+            <summary>
+            Creates new Bitmap with rendered Barcode.
+            </summary>
+            <param name="xDpi">Horizontal resolution in dots per inch</param>
+            <param name="yDpi">Vertical resolution in dots per inch</param>
+            <returns>Bitmap handle (HBITMAP) with rendered Barcode.</returns>
+        </member>
+        <member name="M:Lesnikowski.Barcode.IBaseBarcode.Render(Lesnikowski.Barcode.ImageType)">
+            <summary>
+            Creates new Bitmap with rendered barcode and 
+            returns byte array containg the image.
+            </summary>
+            <param name="imageType">Format of the output image.</param>
+            <returns>Byte array containg barcode image in specified image format.</returns>
+        </member>
+        <member name="M:Lesnikowski.Barcode.IBaseBarcode.Render(Lesnikowski.Barcode.ImageType,System.Single,System.Single)">
+            <summary>
+            Creates new Bitmap with rendered barcode and 
+            returns byte array containg the image.
+            </summary>
+            <param name="imageType">Format of the output image.</param>
+            <param name="xDpi">Horizontal resolution in dots per inch.</param>
+            <param name="yDpi">Vertical resolution in dots per inch.</param>
+            <returns>Byte array containg barcode image in specified image format.</returns>
+        </member>
+        <member name="M:Lesnikowski.Barcode.IBaseBarcode.Save(System.String,Lesnikowski.Barcode.ImageType)">
+            <summary>
+            Creates new Bitmap with rendered Barcode and saves
+            it to file of imageType format.
+            </summary>
+            <param name="imageType">Format of the output image.</param>
+            <param name="fileName">Name of created file.</param>
+        </member>
+        <member name="M:Lesnikowski.Barcode.IBaseBarcode.Save(System.String,Lesnikowski.Barcode.ImageType,System.Single,System.Single)">
+            <summary>
+            Creates new Bitmap with rendered Barcode and saves it to file of imageType format.
+            </summary>
+            <param name="imageType">Format of the output image</param>
+            <param name="xDpi">Horizontal resolution in dots per inch</param>
+            <param name="yDpi">Vertical resolution in dots per inch</param>
+            <param name="fileName">Name of created file</param>
+        </member>
+        <member name="P:Lesnikowski.Barcode.IBaseBarcode.Rotation">
+            <summary>
+            Rotation of the rendered barcode.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Barcode.IBaseBarcode.NarrowBarWidth">
+            <summary>
+            Width of the narrow bar in rendered barcode in pixels.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Barcode.IBaseBarcode.Height">
+            <summary>
+            Barcode height in pixels.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Barcode.IBaseBarcode.BarColor">
+            <summary>
+            Bar color.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Barcode.IBaseBarcode.BackColor">
+            <summary>
+            Back color.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Barcode.IBaseBarcode.ForeColor">
+            <summary>
+            Fore color.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Barcode.IBaseBarcode.Ratio">
+            <summary>
+            Wide/narrow bar ratio.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Barcode.IBaseBarcode.IsNumberVisible">
+            <summary>
+            True if text should be visible in rendered barcode.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Barcode.IBaseBarcode.Number">
+            <summary>
+            Barcode number. Separate supplement with ',' char.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Barcode.IBaseBarcode.CustomText">
+            <summary>
+            Custom text which will be rendered instead of Number.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Barcode.IBaseBarcode.LeftQuietZone">
+            <summary>
+            Gets or sets quiet zone size.
+            If <see cref="P:Lesnikowski.Barcode.IBaseBarcode.SetMarginsAutomatically"/> is set to true always returns this.NarrowBarWidth*9.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Barcode.IBaseBarcode.RightQuietZone">
+            <summary>
+            Gets or sets quiet zone size.
+            If <see cref="P:Lesnikowski.Barcode.IBaseBarcode.SetMarginsAutomatically"/> is set to true always returns this.NarrowBarWidth*9.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Barcode.IBaseBarcode.SetMarginsAutomatically">
+            <summary>
+            If set to true <see cref="P:Lesnikowski.Barcode.IBaseBarcode.RightQuietZone"/> and <see cref="P:Lesnikowski.Barcode.IBaseBarcode.LeftQuietZone"/> always return this.NarrowBarWidth*9.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Barcode.IBaseBarcode.FontHeight">
+            <summary>
+            Fraction of Height which will be reserved for text label.
+            Between 0 and 1.0. Default is 0.15
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Barcode.IBaseBarcode.FontStyle">
+            <summary>
+            Font style that will be used for any text on barcode image.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Barcode.IBaseBarcode.FontName">
+            <summary>
+            Font name that will be used for any text on barcode image.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Barcode.IBaseBarcode.ChecksumVisible">
+            <summary>
+            True if checksum should be visible in barcode text.
+            </summary>   
+        </member>
+        <member name="P:Lesnikowski.Barcode.IBaseBarcode.ChecksumAdd">
+            <summary>
+            True if checksum should be added.
+            </summary>
+        </member>
+        <member name="M:Lesnikowski.Barcode.BaseBarcode.Render">
+            <summary>
+            Creates new Bitmap with rendered Barcode.
+            </summary>
+            <returns>Bitmap with rendered Barcode.</returns>
+        </member>
+        <member name="M:Lesnikowski.Barcode.BaseBarcode.Render(System.Single,System.Single)">
+            <summary>
+            Creates new Bitmap with rendered Barcode.
+            </summary>
+            <param name="xDpi">Horizontal resolution in dots per inch</param>
+            <param name="yDpi">Vertical resolution in dots per inch</param>
+            <returns>Bitmap with rendered Barcode.</returns>
+        </member>
+        <member name="M:Lesnikowski.Barcode.BaseBarcode.RenderHbitmap">
+            <summary>
+            Creates new Bitmap with rendered Barcode.
+            </summary>
+            <returns>Bitmap handle (HBITMAP) with rendered Barcode.</returns>
+        </member>
+        <member name="M:Lesnikowski.Barcode.BaseBarcode.RenderHbitmap(System.Single,System.Single)">
+            <summary>
+            Creates new Bitmap with rendered Barcode.
+            </summary>
+            <param name="xDpi">Horizontal resolution in dots per inch</param>
+            <param name="yDpi">Vertical resolution in dots per inch</param>
+            <returns>Bitmap handle (HBITMAP) with rendered Barcode.</returns>
+        </member>
+        <member name="M:Lesnikowski.Barcode.BaseBarcode.Render(System.Drawing.Graphics,System.Int32,System.Int32)">
+            <summary>
+            Renders barcode on specified graphics object.
+            </summary>
+            <param name="g">Graphics object to render on it.</param>
+            <param name="x">X coordinate</param>
+            <param name="y">Y coordinate</param>
+        </member>
+        <member name="M:Lesnikowski.Barcode.BaseBarcode.Render(Lesnikowski.Barcode.ImageType)">
+            <summary>
+            Creates new Bitmap with rendered barcode and 
+            returns byte array containg the image.
+            </summary>
+            <param name="imageType">Format of the output image.</param>
+            <returns>Byte array containg barcode image in specified image format.</returns>
+        </member>
+        <member name="M:Lesnikowski.Barcode.BaseBarcode.Render(Lesnikowski.Barcode.ImageType,System.Single,System.Single)">
+            <summary>
+            Creates new Bitmap with rendered barcode and 
+            returns byte array containg the image.
+            </summary>
+            <param name="imageType">Format of the output image.</param>
+            <param name="xDpi">Horizontal resolution in dots per inch.</param>
+            <param name="yDpi">Vertical resolution in dots per inch.</param>
+            <returns>Byte array containg barcode image in specified image format.</returns>
+        </member>
+        <member name="M:Lesnikowski.Barcode.BaseBarcode.Save(System.String,Lesnikowski.Barcode.ImageType)">
+            <summary>
+            Creates new Bitmap with rendered Barcode and saves
+            it to file of imageType format.
+            </summary>
+            <param name="imageType">Format of the output image.</param>
+            <param name="fileName">Name of created file.</param>
+        </member>
+        <member name="M:Lesnikowski.Barcode.BaseBarcode.Save(System.String,Lesnikowski.Barcode.ImageType,System.Single,System.Single)">
+            <summary>
+            Creates new Bitmap with rendered Barcode and saves it to file of imageType format.
+            </summary>
+            <param name="imageType">Format of the output image</param>
+            <param name="xDpi">Horizontal resolution in dots per inch</param>
+            <param name="yDpi">Vertical resolution in dots per inch</param>
+            <param name="fileName">Name of created file</param>
+        </member>
+        <member name="M:Lesnikowski.Barcode.BaseBarcode.Save(System.IO.Stream,Lesnikowski.Barcode.ImageType)">
+            <summary>
+            Creates new Bitmap with rendered Barcode and saves it to the stream 
+            with specified image format.
+            </summary>
+            <param name="imageType">Format of the output image</param>
+            <param name="stream">Stream</param>
+        </member>
+        <member name="M:Lesnikowski.Barcode.BaseBarcode.Save(System.IO.Stream,Lesnikowski.Barcode.ImageType,System.Single,System.Single)">
+            <summary>
+            Creates new Bitmap with rendered Barcode and saves it to the stream 
+            with specified image format and resolution
+            </summary>
+            <param name="imageType">Format of the output image</param>
+            <param name="xDpi">Horizontal resolution in dots per inch</param>
+            <param name="yDpi">Vertical resolution in dots per inch</param>
+            <param name="stream">Stream</param>
+        </member>
+        <member name="M:Lesnikowski.Barcode.BaseBarcode.GetLicenseFolder">
+            <summary>
+            Returns folder path from which component 
+            will load license file (BarcodeLicense.xml).
+            </summary>
+            <returns>License file folder</returns>
+        </member>
+        <member name="P:Lesnikowski.Barcode.BaseBarcode.Rotation">
+            <summary>
+            Rotation of the rendered barcode.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Barcode.BaseBarcode.NarrowBarWidth">
+            <summary>
+            Width of the narrow bar in rendered barcode in pixels.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Barcode.BaseBarcode.Height">
+            <summary>
+            Barcode height in pixels.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Barcode.BaseBarcode.BarColor">
+            <summary>
+            Bar color.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Barcode.BaseBarcode.BackColor">
+            <summary>
+            Back color.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Barcode.BaseBarcode.ForeColor">
+            <summary>
+            Text color.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Barcode.BaseBarcode.Ratio">
+            <summary>
+            Wide/narrow bar ratio.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Barcode.BaseBarcode.IsNumberVisible">
+            <summary>
+            True if text should be visible in rendered barcode.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Barcode.BaseBarcode.Number">
+            <summary>
+            Barcode number. Separate supplement with ',' char.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Barcode.BaseBarcode.CustomText">
+            <summary>
+            Custom text which will be rendered instead of Number.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Barcode.BaseBarcode.LeftQuietZone">
+            <summary>
+            Gets or sets quiet zone size.
+            If <see cref="P:Lesnikowski.Barcode.BaseBarcode.SetMarginsAutomatically"/> is set to true always returns this.NarrowBarWidth*9.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Barcode.BaseBarcode.RightQuietZone">
+            <summary>
+            Gets or sets quiet zone size.
+            If <see cref="P:Lesnikowski.Barcode.BaseBarcode.SetMarginsAutomatically"/> is set to true always returns this.NarrowBarWidth*9.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Barcode.BaseBarcode.SetMarginsAutomatically">
+            <summary>
+            If set to true <see cref="P:Lesnikowski.Barcode.BaseBarcode.RightQuietZone"/> and <see cref="P:Lesnikowski.Barcode.BaseBarcode.LeftQuietZone"/> always return this.NarrowBarWidth*9.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Barcode.BaseBarcode.FontHeight">
+            <summary>
+            Fraction of Height which will be reserved for text label.
+            Between 0 and 1.0. Default is 0.15
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Barcode.BaseBarcode.FontStyle">
+            <summary>
+            Font style that will be used for any text on barcode image.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Barcode.BaseBarcode.FontName">
+            <summary>
+            Font name that will be used for any text on barcode image.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Barcode.BaseBarcode.ChecksumAdd">
+            <summary>
+            True if checksum should be added.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Barcode.BaseBarcode.ChecksumVisible">
+            <summary>
+            True if checksum should be visible in barcode text.
+            </summary>   
+        </member>
+        <member name="T:Lesnikowski.Barcode.IBearerBars">
+            <summary>
+            Barcodes which can have bearer bars will implement this interface.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Barcode.IBearerBars.BearerBars">
+            <summary>
+            Bearer bars type.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Barcode.IBearerBars.BearerBarsSize">
+            <summary>
+            Bearer bars size in pixels.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Barcode.SimpleBarcode.BearerBars">
+            <summary>
+            Bearer bars type.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Barcode.SimpleBarcode.BearerBarsSize">
+            <summary>
+            Bearer bars size in pixels.
+            </summary>
+        </member>
+        <member name="M:Lesnikowski.Barcode.Barcode11.AddChecksumCK">
+            <summary>
+            Adds 2 checksum characters (C and K).
+            2 checksum characters should be used if the message is 10 characters or longer.
+            </summary>
+            <param name="visible"></param>
+        </member>
+        <member name="M:Lesnikowski.Barcode.Barcode11.AddChecksumC">
+            <summary>
+            Adds 1 checksum character (C).
+            1 checksum character should be used if the message is less than 10 characters long.
+            </summary>
+        </member>
+        <member name="M:Lesnikowski.Barcode.Barcode11.AddChecksum">
+            <summary>
+            If the message is 11 characters or longer adds 2 checksum characters (C and K).
+            If the message is less than 11 characters long adds 1 checksum character (C).
+            </summary>
+        </member>
+        <member name="T:Lesnikowski.Barcode.Code128Control">
+            <summary>
+            Code128 control codes.
+            </summary>
+        </member>
+        <member name="T:Lesnikowski.Barcode.Barcode128">
+            <summary>
+            Code 128 barcode class. <seealso cref="T:Lesnikowski.Barcode.BarcodeEAN128"/>
+            </summary>
+            <remarks>
+            This type of bar code is used mostly in the shipping industry and on labels. 
+            This code is variable in length, alphanumeric, and continuous 
+            where all spaces are part of the characters. 
+            Each character consists of three bars and three spaces.
+            This is a very compact, high density symbol. 
+            Because of its high density it makes very efficient use of space. 
+            Encoded characters include numbers, letters and special characters. 
+            The checksum digit is included in all Code 128 Barcodes, but it isn't printed.
+            </remarks>
+        </member>
+        <member name="M:Lesnikowski.Barcode.Barcode128.ReadPattern(System.String)">
+            <summary>
+            Code128
+            </summary>
+            <param name="resourceName">"Barcode.Full128.txt"</param>
+        </member>
+        <member name="M:Lesnikowski.Barcode.Barcode128.ReadSet(System.String)">
+            <summary>
+            Code128
+            </summary>
+            <param name="resourceName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Lesnikowski.Barcode.Barcode128.GetByteArrayFromPatterns(System.Collections.ArrayList)">
+            <summary>
+            
+            </summary>
+            <param name="arr">List of indexes in patterns array</param>
+            <returns>byte array (containing only zeros and ones) to render</returns>
+        </member>
+        <member name="M:Lesnikowski.Barcode.Barcode128.GetPatternsIndexes">
+            <summary>
+            </summary>
+            <returns>List of indexes in patterns array</returns>
+        </member>
+        <member name="T:Lesnikowski.Barcode.Barcode39">
+            <summary>
+            Code 39 barcode class. Also known as: 3 of 9 Code, USD-3.
+            </summary>
+            <remarks>
+            Code 39 is the most popular bar code symbology used for ID, inventory, tracking and labeling.
+            It can be read by most types of scanners. 
+            Characters available for encoding include uppercase letters and numbers. 
+            It is self checking but when additional security is required, a check character is an option. 
+            It is the standard bar code used by the United States Department of Defense, 
+            and is also used by the Health Industry Bar Code Council (HIBCC). 
+            </remarks>
+        </member>
+        <member name="M:Lesnikowski.Barcode.Barcode39.AddChecksum">
+            <summary>
+            Adds checksum
+            </summary>
+            <param name="visible">
+            true if checksum char should be visible
+            </param>
+        </member>
+        <member name="M:Lesnikowski.Barcode.Barcode39.CalculateChecksum">
+            <summary>
+            Calculates checksum
+            </summary>
+            <returns>Calculated checksum</returns>
+        </member>
+        <member name="T:Lesnikowski.Barcode.Barcode39Ext">
+            <summary>
+            Code 39 "Full ASCII Mode" barcode class.
+            </summary>
+            <remarks>
+            It can encode all 128 ASCII characters.
+            </remarks>
+        </member>
+        <member name="T:Lesnikowski.Barcode.Barcode93">
+            <summary>
+            Code 93 barcode class.
+            </summary>
+            <remarks>
+            Code 93 is a continous, variable-length symbology
+            </remarks>
+        </member>
+        <member name="M:Lesnikowski.Barcode.Barcode93.AddChecksum">
+            <summary>
+            Adds c and k modulo 47 checksum (2 chars)
+            </summary>
+            <param name="visible">
+            true if checksum chars should be visible
+            </param>
+        </member>
+        <member name="T:Lesnikowski.Barcode.Barcode93Ext">
+            <summary>
+            Code 93 "Full ASCII Mode" barcode class.
+            </summary>
+            <remarks>
+            It can encode all 128 ASCII characters.
+            </remarks>
+        </member>
+        <member name="T:Lesnikowski.Barcode.BarcodeCodabar">
+            <summary>
+            Codabar barcode class. Also known as: Ames Code, USD-4, NW-7, 2 of 7 Code.
+            </summary>
+            <remarks>
+            This symbology is used by U.S. blood banks, photo labs, and on FedEx airbills.
+            </remarks>
+        </member>
+        <member name="T:Lesnikowski.Barcode.BarcodeDeutschePost">
+            <summary>
+            Base class for Deutsche Post Barcodes <seealso cref="T:Lesnikowski.Barcode.BarcodeDeutschePostLeitcode"/> <seealso cref="T:Lesnikowski.Barcode.BarcodeDeutschePostIdentcode"/>.
+            </summary>
+        </member>
+        <member name="T:Lesnikowski.Barcode.BarcodeI2of5">
+            <summary>
+            Interleaved 2 of 5 barcode class.
+            </summary>
+            <remarks>
+            It is used primarily in the distribution and warehouse industry and in the medical field.
+            It is commonly used for ITF-14, EAN-14, SSC-14 and DUN14.
+            <br/><br/>
+            The code is variable in length and is numeric only. 
+            It is also a continuous symbology. 
+            <br/><br/>
+            Each character consists of 5 bars and 5 spaces. 
+            Each character encodes 2 digits. 
+            The bars encode the odd digits, and the spaces encode the even digits.
+            This is the highest density symbology for numeric data. 
+            It is a self checking code but the use of a check character is optional if additional security is necessary.
+            <br/><br/>
+            Number length must be even. If number length is odd add '0' character at the beginning.
+            </remarks>
+        </member>
+        <member name="T:Lesnikowski.Barcode.BarcodeS2of5">
+            <summary>
+            Standard 2 of 5 barcode class. Also known as Industrial 2 of 5.
+            </summary>
+            <remarks>
+            Used in airline ticket marking, photofinishing.
+            </remarks>
+        </member>
+        <member name="M:Lesnikowski.Barcode.BarcodeS2of5.AddChecksum">
+            <summary>
+            Adds checksum.
+            </summary>
+        </member>
+        <member name="M:Lesnikowski.Barcode.BarcodeS2of5.CalculateChecksum">
+            <summary>
+            Calculates checksum
+            </summary>
+            <returns>Calculated checksum</returns>
+        </member>
+        <member name="M:Lesnikowski.Barcode.BarcodeDeutschePost.CalculateChecksum">
+            <summary>
+            Calculates checksum
+            </summary>
+            <returns>Calculated checksum</returns>
+        </member>
+        <member name="T:Lesnikowski.Barcode.BarcodeDeutschePostIdentcode">
+            <summary>
+            Deutsche Post Identcode Barcode.
+            </summary>
+            <remarks>
+            Identcode barcode Symbology is used by German Post (Deutsche Post AG) (Deutsche Frachtpost).
+            Also known as: Deutsche Post AG Identcode, German Postal 2 of 5 Identcode, Deutsche Post AG (DHL), Deutsche Frachtpost Identcode, Identcode, CodeIdentcode.
+            
+            The Identcode contains a tracking number providing an identification of the customer (sender)
+            and the mail piece.
+            The value to encode length is 11 digits plus 1 digit checksum which is calculated automatically.
+            The value to encode must have the following structure:
+            <list type="bullet">
+            <item>2 digits for ID of primary distribution center.</item>
+            <item>3 digits for Customer ID.</item>
+            <item>6 digits for Mailing number.</item>
+            </list>
+            </remarks>
+        </member>
+        <member name="T:Lesnikowski.Barcode.BarcodeDeutschePostLeitcode">
+            <summary>
+            Deutsche Post Leitcode Barcode.
+            </summary>
+            <remarks>
+            Leitcode barcode Symbology is used by German Post (Deutsche Post AG) (Deutsche Frachtpost). 
+            Also known as: German Postal 2 of 5 Leitcode, CodeLeitcode, Leitcode, Deutsche Post AG (DHL).
+            
+            The Leitcode gives an indication of the destination.
+            The value to encode length is fixed to 13 digits plus 1 digit checksum which is calculated automatically.
+            The value to encode must have the following structure: 
+            <list type="bullet">
+            <item>5 digits for Postal code (Postleitzahl, PLZ)</item>
+            <item>3 digits for Street ID/number</item>
+            <item>3 digits for House number</item>
+            <item>2 digits for Product code</item>
+            </list>
+            </remarks>
+        </member>
+        <member name="T:Lesnikowski.Barcode.BarcodeEAN128">
+            <summary>
+            UCC/EAN-128 barcode class. Also known as: GS1-128, EAN-128, UCC-128.
+            </summary>
+            <remarks>
+            UCC/EAN-128 was developed to provide a worldwide format and standard for exchanging 
+            common data between companies. 
+            While other barcodes simply encode data with no respect for what the data represents, 
+            UCC/EAN-128 encodes data and encodes what that data represents.
+            
+            You shoud use the following number format: (ai)data*.
+            For example: (10)12345(01)12345
+            </remarks>
+        </member>
+        <member name="P:Lesnikowski.Barcode.BarcodeEAN128.DataSections">
+            <summary>
+            This is the collection that is parsed from number property.
+            You can add items to this collection.
+            Key is the Application Identifiers (AI)
+            Value is AI's data.
+            </summary>
+        </member>
+        <member name="T:Lesnikowski.Barcode.BarcodeEAN13">
+            <summary>
+            EAN-13 barcode class. Also known as: EAN-99, JAN-13.
+            </summary>
+            <remarks>
+            Implemented by the International Article Numbering Association (EAN) in Europe.
+            EAN-13 is a superset of UPC-A. This means that any software or hardware capable 
+            of reading an EAN-13 symbol will automatically be able to read an UPC-A symbol.
+            <br /><br />
+            Bookland bar codes are used on books and ISSN bar codes are used on magazines.
+            <br /><br />
+            The number of the item and its price are not actually in the bar code. 
+            When the EAN bar code is scanned it pulls out information from an inventory database. 
+            This is how the registers know the item name and price. 
+            When prices change, they are changed in the database, 
+            otherwise each item affected by the price change would have to have its bar code replaced.
+            <br /><br />
+            The EAN Symbol is numeric only. It is made up of the following: 
+            <list type="bullet">
+                <item>The number system, 2 or 3 digits. </item>
+                <item>Manufacturer number, assigned by the Uniform Code Council. </item>
+                <item>Product number that identifies the product, assigned by the manufacturer. </item>
+                <item>A check character found in the lower right hand corner. </item>
+            </list>
+            <br /><br />
+            EAN bar codes are used in Europe, 
+            JAN (Japanese Article Numbering) bar codes are used in Japan, 
+            UPC are used in the USA.
+            <br /><br />
+            EAN-99 is a special form of EAN-13 which just starts with "99".
+            JAN-13 is a special form of EAN-13 which just starts with "45" or "49".   
+            </remarks>
+        </member>
+        <member name="M:Lesnikowski.Barcode.BarcodeEAN13.AddChecksum">
+            <summary>
+            Adds checksum
+            </summary>
+        </member>
+        <member name="M:Lesnikowski.Barcode.BarcodeEAN13.CalculateChecksum">
+            <summary>
+            Calculates checksum
+            </summary>
+            <returns>Calculated checksum</returns>
+        </member>
+        <member name="T:Lesnikowski.Barcode.BarcodeEAN14">
+            <summary>
+            EAN-14 barcode class (EAN128).
+            Also known as: Shipping Container Code, UCC/EAN-14, UCC-14, DUN-14 (Distribution Unit Number), SSC-14.
+            </summary>
+            <remarks>
+            Barcode contains 14 character including 1 checksum character which can be calculated automatically.
+            Encoded with Code128 symbology (UCC/EAN-128). 
+            Two digits, called Application Identifier (AI) are added at the beginning of the barcode (01).
+            <br/><br/>
+            You shoud use the following number format: "12345678901234".
+            <br/><br/>
+            The DUN-14 has the following data encoded: 
+            <list type="bullet">
+            <item>
+                The first digits represents the number of units in the container: 
+                <list type="bullet">
+                <item>1=6 units, </item>
+                <item>2=10 units, </item>
+                <item>3=12 units, </item>
+                <item>4=20 units, </item>
+                <item>5=24 units.</item>
+                </list>
+            </item>
+            <item>The digits 6,7 and 8 are standing for other numbers of units. </item>
+            <item>
+            The next 12 digits are representing the product number. 
+            General this the EAN-13 number without the check digit. 
+            </item>
+            <item>The last digit is the check digit.</item>
+            </list>
+            <br />
+            Two digits, called Application Identifier (AI) are added at the beginning of the barcode (01).
+            <br/>
+            You shoud use the following number format: "1234567890123".
+            </remarks>
+        </member>
+        <member name="M:Lesnikowski.Barcode.BarcodeEAN14.AddChecksum">
+            <summary>
+            Adds checksum.
+            </summary>
+        </member>
+        <member name="M:Lesnikowski.Barcode.BarcodeEAN14.CalculateChecksum">
+            <summary>
+            Calculates mod 10 checksum.
+            </summary>
+            <returns>Calculated checksum.</returns>
+        </member>
+        <member name="T:Lesnikowski.Barcode.BarcodeEAN8">
+            <summary>
+            EAN-8 barcode class. Also known as EAN-Velocity.
+            </summary>
+            <remarks>
+            Provides a "short" barcode for small packages. <seealso cref="!:BarcodeEan13"/>
+            
+            <br/><br/>
+            EAN-Velocity is a special form of the EAN-8. It always starts with a zero.
+            </remarks>
+        </member>
+        <member name="M:Lesnikowski.Barcode.BarcodeEAN8.CalculateChecksum">
+            <summary>
+            Calculates the checksum.
+            </summary>
+            <returns>Calculated checksum.</returns>
+        </member>
+        <member name="T:Lesnikowski.Barcode.BarcodeITF14">
+            <summary> 
+            ITF-14 barcode class (Interleaved 2 of 5).
+            Also known as: Shipping Container Code, UCC-14, DUN-14 (Distribution Unit Number), SSC-14, EAN-14.
+            </summary>
+            <remarks>
+            The ITF-14 barcode is used to create the Shipping Container Symbol. 
+            ITF-14 is created using Interleaved 2 of 5 symbology.
+            and contains 14 digits including 1 checksum character which can be added automatically.
+            </remarks>
+        </member>
+        <member name="T:Lesnikowski.Barcode.BarcodeMSI">
+            <summary>
+            MSI barcode class. Also known as Modified Plessey.
+            </summary>
+            <remarks>
+            MSI was developed by the MSI Data Corporation, based on the original Plessey Code. 
+            Is used primarily to mark retail shelves for inventory control. 
+            MSI is a continuous, non-self-checking symbology. 
+            </remarks>
+        </member>
+        <member name="M:Lesnikowski.Barcode.BarcodeMSI.AddChecksum">
+            <summary>
+            Adds modulo 10 checksum.
+            </summary>
+        </member>
+        <member name="M:Lesnikowski.Barcode.BarcodeMSI.CalculateChecksum">
+            <summary>
+            Calculates modulo 10 checksum.
+            </summary>
+            <returns>checksum</returns>
+        </member>
+        <member name="T:Lesnikowski.Barcode.BarcodeNumly">
+            <summary>
+            Numly Number bracode class. Also known as: ESN, Electronic Serial Number.
+            </summary>
+            <remarks>
+            It is a unique identifier that allows an author or publisher to assign to content and
+            track licensing of each id assignment.
+            Numly Numbers are useful if you wish to identify each electronic distributed copy of any form 
+            of electronic media. 
+            <br /><br />
+            Media types could include: 
+            Blogs, Emails, MP3s, Videos, PDFs, eBooks, Software, Websites, etc. 
+            Numly Numbers can also act a third-party content submission time stamps to
+            aid in copyright proving instances and emails.
+            <br /><br />
+            The Numly Number consists of a 19 digit number generated by an algorithm by Numly.com
+            </remarks>
+        </member>
+        <member name="T:Lesnikowski.Barcode.BarcodeOPC">
+            <summary>
+            Optical Product Code barcode class. Also known as: OPC, VCA, Vision Council of America OPC, VCA OPC.
+            </summary>
+            <remarks>
+            The OPC code is used for marking retail optical products.
+            The value to encode length is fixed to 10 digits and it must have the following structure: 
+            <list type="bullet">
+            <item>5 digits for Manufacturer Identification Number assigned by the Optical Product Code Council, Inc. </item>
+            <item>
+            4 digits Item Identification Number assigned and controlled by the optical manufacturer. 
+            The item identification number must be unique to each individual product.
+            </item>
+            <item>1 digit for checksum which is calculated automatically.</item>
+            </list>
+            </remarks>
+        </member>
+        <member name="M:Lesnikowski.Barcode.BarcodeOPC.CalculateChecksum">
+            <summary>
+            Calculates checksum
+            </summary>
+            <returns>Calculated checksum</returns>
+        </member>
+        <member name="T:Lesnikowski.Barcode.BarcodePlanet">
+            <summary>
+            Planet barcode class.
+            </summary>
+            <remarks>
+            Postnet was developed by the United States Postal Service (USPS) 
+            to allow faster sorting and routing of mail. 
+            Postnet bar codes are used to encode the zip codes on mail for the Postal Service. 
+            Height of bars alternates rather than the width. 
+            Each number is represented by 5 bars. 
+            Can be used on 5-digit zip codes, 9-digit zip+4, and the new 11-digit Deliver Point bar code. 
+            </remarks>
+        </member>
+        <member name="M:Lesnikowski.Barcode.BarcodePlanet.AddChecksum">
+            <summary>
+            Adds 1 checksum character.
+            </summary>
+        </member>
+        <member name="M:Lesnikowski.Barcode.BarcodePlanet.CalculateChecksum">
+            <summary>
+            Calculates modulo 10 checksum.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Lesnikowski.Barcode.BarcodePostnet">
+            <summary>
+            Posnet barcode class.
+            </summary>
+            <remarks>
+            Postnet was developed by the United States Postal Service (USPS) 
+            to allow faster sorting and routing of mail. 
+            Postnet bar codes are used to encode the zip codes on mail for the Postal Service. 
+            Height of bars alternates rather than the width. 
+            Each number is represented by 5 bars. 
+            Can be used on 5-digit zip codes, 9-digit zip+4, and the new 11-digit Deliver Point bar code. 
+            </remarks>
+        </member>
+        <member name="M:Lesnikowski.Barcode.BarcodePostnet.AddChecksum">
+            <summary>
+            Adds 1 checksum character.
+            </summary>
+        </member>
+        <member name="M:Lesnikowski.Barcode.BarcodePostnet.CalculateChecksum">
+            <summary>
+            Calculates modulo 10 checksum.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Lesnikowski.Barcode.BarcodePZN">
+            <summary>
+            Pharma Zentral Nummer barcode class.
+            Also known as PZN.
+            </summary>
+            <remarks> 
+            PZN is used for distribution of pharmaceutical / health care products in Germany.
+            The value to encode length is fixed to 6 digits plus 1 digit checksum which is calculated automatically.
+            </remarks>
+        </member>
+        <member name="M:Lesnikowski.Barcode.BarcodePZN.AddChecksum">
+            <summary>
+            Adds 1 checksum character.
+            </summary>
+        </member>
+        <member name="T:Lesnikowski.Barcode.BarcodeRoyalMail4State">
+            <summary>
+            Royal Mail 4-State Customer barcode class. Also known as RM4SCC.
+            </summary>
+            <remarks>
+            For automated mail sorting processes and is normally used 
+            to print the postcode and Delivery Point Suffix (DPS) 
+            on letters in machine readable format.
+            </remarks>
+        </member>
+        <member name="M:Lesnikowski.Barcode.BarcodeRoyalMail4State.AddChecksum">
+            <summary>
+            Adds 1 checksum character.
+            </summary>
+        </member>
+        <member name="T:Lesnikowski.Barcode.BarcodeRoyalTntPostKix">
+            <summary>
+            Royal TNT Post kix barcode class. 
+            Also known as: Dutch KIX 4-State, Dutch KIX, TPG KIX, TPGPOST KIX.
+            </summary>
+        </member>
+        <member name="T:Lesnikowski.Barcode.BarcodeSingaporePost4State">
+            <summary>
+            Singapore Post 4-State barcode class.
+            </summary>
+        </member>
+        <member name="T:Lesnikowski.Barcode.BarcodeSSCC18">
+            <summary>
+            SSCC-18 barcode class (EAN128).
+            Also known as: Serial Shipping Container Code, EAN-18 and NVE.
+            </summary>
+            <remarks>
+            The Serial Shipping Container Code is used to identify individual shipping containers.  
+            This is used, generally, to establish a number that is unique worldwide to track a specific container.<br /><br />
+            SSCC-18 is encoded with Code128 symbology (UCC/EAN-128). <br />
+            Barcode is 18 characters long including 1 checksum character which can be added automatically, 
+            and has the following structure:    
+            <list type="bullet">
+            <item>
+            Packaging Type (1 character). 
+            <list type="bullet">
+                <item>0=Case or carton.</item>
+                <item>1=Pallet (Larger than a case).</item>
+                <item>2=Container (larger than a pallet).</item>
+                <item>3=Undefined.</item>
+                <item>4=Internal company use.</item>
+                <item>5-8=Reserved.</item>
+                <item>9=Variable container.</item>
+            </list>
+            </item>
+            <item>
+                UPC/EAN Manufacturer Number (variable length).     
+                This is the same company code used in EAN-8/EAN-13/UPC-A barcodes. 
+            </item>
+            <item>
+                Serial Number (variable Length).
+                This is a unique serial number assigned by the manufacturer.
+            </item>
+            <item>
+                Check digit(1 character).
+            </item>
+            </list>
+            <br />
+            Two digits, called Application Identifier (AI) are added at the beginning of the barcode (00).
+            <br/>
+            You shoud use the following number format: "12345678901234567".
+            </remarks>
+        </member>
+        <member name="M:Lesnikowski.Barcode.BarcodeSSCC18.AddChecksum">
+            <summary>
+            Adds checksum.
+            </summary>
+        </member>
+        <member name="M:Lesnikowski.Barcode.BarcodeSSCC18.CalculateChecksum">
+            <summary>
+            Calculates mod 10 checksum.
+            </summary>
+            <returns>Calculated checksum.</returns>
+        </member>
+        <member name="T:Lesnikowski.Barcode.BarcodeSwissPostParcel">
+            <summary>
+            Swiss Post Barcode.
+            </summary>
+            <remarks>
+            It identifies each parcel. All parcels must have a unique barcode.
+            The barcode is the requirement for automated processing.
+            The structure of the Swiss Post Parcel barcode is 18 numeric digits: 
+            <list type="bullet">
+            <item>2 digits for Swiss Post reference ,</item>
+            <item>8 digits for Franking license number,</item>
+            <item>8 digits for Item number .</item>
+            </list>
+            </remarks>
+        </member>
+        <member name="T:Lesnikowski.Barcode.BarcodeUPCA">
+            <summary>
+            UPC-A barcode class
+            </summary>
+            <remarks>
+            UPC bar codes are used by the grocery and retail industries. 
+            Supersets to UPC are EAN, Jan, Bookland and ISSN bar codes. 
+            EAN bar codes are used in Europe and JAN bar codes are used in Japan. 
+            Bookland bar codes are used on books and ISSN bar codes are used on magazines.
+            
+            The number of the item and its price are not actually in the bar code. 
+            When the UPC bar code is scanned it pulls out information from an inventory database. 
+            This is how the registers know the item name and price. 
+            When prices change, they are changed in the database, 
+            otherwise each item affected by the price change would have to have its bar code replaced.
+            
+            The UPC Symbol is numeric only. It is made up of the following: 
+            <list type="bullet">
+                <item>The number system, single digit in lower left corner. </item>
+                <item>A 5 digit manufacturer number on the left, assigned by the Uniform Code Council. </item>
+                <item>A 5 digit product number on the right that identifies the product, assigned by the manufacturer. </item>
+                <item>A check character found in the lower right hand corner. </item>
+            </list>
+            </remarks>
+        </member>
+        <member name="M:Lesnikowski.Barcode.BarcodeUPCA.AddChecksum">
+            <summary>
+            Adds checksum
+            </summary>
+        </member>
+        <member name="M:Lesnikowski.Barcode.BarcodeUPCA.CalculateChecksum">
+            <summary>
+            Calculates checksum
+            </summary>
+            <returns>Calculated checksum</returns>
+        </member>
+        <member name="T:Lesnikowski.Barcode.BarcodeUPCE">
+            <summary>
+            UPC-E barcode class.
+            </summary>
+            <remarks>
+            Provides a "short" barcode for small packages. <seealso cref="!:BarcodeUpcA"/>
+            </remarks>
+        </member>
+        <member name="T:Lesnikowski.Barcode.BarcodeUSPSSackLabel">
+            <summary>
+            USPS Sack Label barcode class.
+            </summary>
+            <remarks>
+            Sack Label is used by United States Postal Services (USPS) for:  
+            <list type="bullet">
+            <item>labeling of postal sacks,</item>
+            <item>automation rate mailings,</item>
+            <item>periodicals and standard mail (letter size and flat size pieces).</item>
+            </list>
+            It contains the "ZIP code" of the receiver and a "Content Identifier Number".
+            The value to encode length is fixed to 8 digits and it must have the following structure: 
+            <list type="bullet">
+            <item>5 digits for "ZIP code" (express, priority, first-class, periodicals, standard, package) </item>
+            <item>3 digits for "Content Identifier Number" [CIN] (mailing class, presorting, automation process sack)</item>
+            </list>
+            </remarks>
+        </member>
+        <member name="T:Lesnikowski.Barcode.BarcodeUSPSTrayLabel">
+            <summary>
+            USPS Tray Label barcode class.
+            </summary>
+            <remarks>
+            Sack Label is used by United States Postal Services (USPS) for: 
+            <list type="bullet">
+            <item>labeling of postal trays,</item>
+            <item>automation rate mailings,</item>
+            <item>periodicals and standard mail (letter size and flat size pieces).</item>
+            </list>
+            It contains the "ZIP code" of the receiver and a "Content Identifier Number".
+            The value to encode length is fixed to 10 digits and it must have the following structure: 
+            <list type="bullet">
+            <item>5 digits for "ZIP code" (express, priority, first-class, periodicals, standard, package) </item>
+            <item>3 digits for "Content Identifier Number" [CIN] (mailing class, presorting, automation process sack)</item>
+            <item>2 digits for "Processing Code"</item>
+            </list>
+            </remarks>
+        </member>
+        <member name="T:Lesnikowski.Barcode.BearerBarsType">
+            <summary>
+            Specifies bearer bars drawing type.
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.BearerBarsType.None">
+            <summary>
+            None bearer bars are drawn (0).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.BearerBarsType.Horizontal">
+            <summary>
+            Only horizontal bearer bars are drawn (1).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.BearerBarsType.Full">
+            <summary>
+            Horizontal and Vertical bearer bars are drawn (2).
+            </summary>
+        </member>
+        <member name="T:Lesnikowski.Barcode.FontStyleType">
+            <summary>
+            Font style.
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.FontStyleType.Bold">
+            <summary>
+            Bold text (1).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.FontStyleType.Italic">
+            <summary>
+             Italic text (2).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.FontStyleType.Regular">
+            <summary>
+            Normal text (0).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.FontStyleType.Strikeout">
+            <summary>
+            Text with a line through the middle (8).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.FontStyleType.Underline">
+            <summary>
+            Underlined text (4).
+            </summary>
+        </member>
+        <member name="T:Lesnikowski.Barcode.ImageType">
+            <summary>
+            Image format.
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.ImageType.Bmp">
+            <summary>
+            Bmp file format (0).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.ImageType.Emf">
+            <summary>
+            Emf file format (1).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.ImageType.Exif">
+            <summary>
+            Exif file format (2).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.ImageType.Gif">
+            <summary>
+            Gif file format (3).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.ImageType.Icon">
+            <summary>
+            Icon file format (4).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.ImageType.Jpeg">
+            <summary>
+            Jpeg file format (5).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.ImageType.MemoryBmp">
+            <summary>
+            MemoryBmp file format (6).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.ImageType.Png">
+            <summary>
+            Png file format (7).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.ImageType.Tiff">
+            <summary>
+            Tiff file format (8).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.ImageType.Wmf">
+            <summary>
+            Wmf file format (9).
+            </summary>
+        </member>
+        <member name="T:Lesnikowski.Barcode.InvalidCharactersException">
+            <summary>
+            Invalid characters exception.
+            </summary>
+        </member>
+        <member name="P:Lesnikowski.Barcode.InvalidCharactersException.Message">
+            <summary>
+            Error message contained in this exception.
+            </summary>
+        </member>
+        <member name="T:Lesnikowski.Barcode.InvalidLengthException">
+            <summary>
+            Invalid length exception.
+            </summary>
+        </member>
+        <member name="T:Lesnikowski.Barcode.NamespaceDoc">
+            <summary>
+            Barcode creating namespace.
+            </summary>
+        </member>
+        <member name="T:Lesnikowski.Windows.NamespaceDoc">
+            <summary>
+            Windows controls namespace.
+            </summary>
+        </member>
+        <member name="T:Lesnikowski.Web.NamespaceDoc">
+            <summary>
+            Web controls namespace.
+            </summary>
+        </member>
+        <member name="M:Lesnikowski.Barcode.PatternReader.ReadLine">
+            <summary>
+            Reads one line, removes comments
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Lesnikowski.Barcode.RotationType">
+            <summary>
+            Type of rotation.
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.RotationType.Degrees0">
+            <summary>
+            0 degrees (0).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.RotationType.Degrees90">
+            <summary>
+            90 degrees (1).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.RotationType.Degrees180">
+            <summary>
+            180 degrees (2).
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Barcode.RotationType.Degrees270">
+            <summary>
+            270 degrees (3).
+            </summary>
+        </member>
+        <member name="T:Lesnikowski.Design.SymbologyListBox">
+            <summary>
+            The form that contains the dropped down editor.
+            </summary>
+        </member>
+        <member name="F:Lesnikowski.Design.SymbologyListBox.service">
+            <summary>
+            The service that dropped this form.
+            </summary>
+        </member>
+        <member name="M:Lesnikowski.Barcode.Validator.CheckLength(System.String,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="number">Narcode Number </param>
+            <param name="length">Possible Length of the barcode with checksum</param>
+            <param name="length2">Possible second Length of the barcode without checksum (-1 if only one length is supported)</param>
+            <param name="checksumAdd">Has user choosed to add checksum?</param>
+        </member>
+    </members>
+</doc>

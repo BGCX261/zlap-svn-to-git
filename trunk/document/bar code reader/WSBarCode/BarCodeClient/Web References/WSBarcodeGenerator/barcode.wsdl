@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://tempuri.org/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://tempuri.org/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Code39">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="barSize" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="showCodeString" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="title" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Code39Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Code39Result" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="base64Binary" nillable="true" type="s:base64Binary" />
+    </s:schema>
+  </types>
+  <message name="Code39SoapIn">
+    <part name="parameters" element="s0:Code39" />
+  </message>
+  <message name="Code39SoapOut">
+    <part name="parameters" element="s0:Code39Response" />
+  </message>
+  <message name="Code39HttpGetIn">
+    <part name="code" type="s:string" />
+    <part name="barSize" type="s:string" />
+    <part name="showCodeString" type="s:string" />
+    <part name="title" type="s:string" />
+  </message>
+  <message name="Code39HttpGetOut">
+    <part name="Body" element="s0:base64Binary" />
+  </message>
+  <message name="Code39HttpPostIn">
+    <part name="code" type="s:string" />
+    <part name="barSize" type="s:string" />
+    <part name="showCodeString" type="s:string" />
+    <part name="title" type="s:string" />
+  </message>
+  <message name="Code39HttpPostOut">
+    <part name="Body" element="s0:base64Binary" />
+  </message>
+  <portType name="BarCodeGeneratorSoap">
+    <operation name="Code39">
+      <input message="s0:Code39SoapIn" />
+      <output message="s0:Code39SoapOut" />
+    </operation>
+  </portType>
+  <portType name="BarCodeGeneratorHttpGet">
+    <operation name="Code39">
+      <input message="s0:Code39HttpGetIn" />
+      <output message="s0:Code39HttpGetOut" />
+    </operation>
+  </portType>
+  <portType name="BarCodeGeneratorHttpPost">
+    <operation name="Code39">
+      <input message="s0:Code39HttpPostIn" />
+      <output message="s0:Code39HttpPostOut" />
+    </operation>
+  </portType>
+  <binding name="BarCodeGeneratorSoap" type="s0:BarCodeGeneratorSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <operation name="Code39">
+      <soap:operation soapAction="http://tempuri.org/Code39" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="BarCodeGeneratorHttpGet" type="s0:BarCodeGeneratorHttpGet">
+    <http:binding verb="GET" />
+    <operation name="Code39">
+      <http:operation location="/Code39" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="BarCodeGeneratorHttpPost" type="s0:BarCodeGeneratorHttpPost">
+    <http:binding verb="POST" />
+    <operation name="Code39">
+      <http:operation location="/Code39" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+  </binding>
+  <service name="BarCodeGenerator">
+    <port name="BarCodeGeneratorSoap" binding="s0:BarCodeGeneratorSoap">
+      <soap:address location="http://localhost/wsBarCode/barcode.asmx" />
+    </port>
+    <port name="BarCodeGeneratorHttpGet" binding="s0:BarCodeGeneratorHttpGet">
+      <http:address location="http://localhost/wsBarCode/barcode.asmx" />
+    </port>
+    <port name="BarCodeGeneratorHttpPost" binding="s0:BarCodeGeneratorHttpPost">
+      <http:address location="http://localhost/wsBarCode/barcode.asmx" />
+    </port>
+  </service>
+</definitions>

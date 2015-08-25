@@ -1,0 +1,81 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E6E1495A-E927-47C1-8662-C96CF3C4D210}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>dataaccess</RootNamespace>
+    <AssemblyName>dataaccess</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="configsql.cs" />
+    <Compile Include="list\advertisemanager.cs" />
+    <Compile Include="list\ArticlesManager.cs" />
+    <Compile Include="list\BrandProduct.cs" />
+    <Compile Include="list\CManageProduct.cs" />
+    <Compile Include="list\CManageUser.cs" />
+    <Compile Include="list\ComponentProduct.cs" />
+    <Compile Include="list\ContactManager.cs" />
+    <Compile Include="list\CSQL.cs" />
+    <Compile Include="list\HelpsManager.cs" />
+    <Compile Include="list\Mobile.cs" />
+    <Compile Include="list\PriceSearchComponent.cs" />
+    <Compile Include="list\Product.cs" />
+    <Compile Include="list\ProductBestSell.cs" />
+    <Compile Include="list\ProductMainPage.cs" />
+    <Compile Include="list\ProductType.cs" />
+    <Compile Include="list\ServiceMaintain.cs" />
+    <Compile Include="list\ServiceRepair.cs" />
+    <Compile Include="list\UserManager.cs" />
+    <Compile Include="list\WebUserDA.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="list\SupportOnlineManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\common\common.csproj">
+      <Project>{2CD6B29B-F8B8-4693-B3D7-C813BDEA3667}</Project>
+      <Name>common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

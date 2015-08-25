@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <search>
+    <title>Màn hình 11"</title>
+    <value>11,11.1</value>
+  </search>
+  <search>
+    <title>Màn hình 12"</title>
+    <value>12,12.1</value>
+  </search>
+  <search>
+    <title>Màn hình 13"</title>
+    <value>13.3</value>
+  </search>
+  <search>
+    <title>Màn hình 14"</title>
+    <value>14,14.1</value>
+  </search>
+  <search>
+    <title>Màn hình 15"</title>
+    <value>15,15.1,15.4</value>
+  </search>
+  <search>
+    <title>Màn hình 17"</title>
+    <value>17</value>
+  </search>
+</root>
+

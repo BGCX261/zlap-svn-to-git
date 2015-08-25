@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExportDemo_CSharpNet", "http://localhost/ExportDemo_CSharpNet/ExportDemo_CSharpNet.csproj", "{49419D91-3F31-422C-8B7E-476EE3A7281D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{49419D91-3F31-422C-8B7E-476EE3A7281D}.Debug.ActiveCfg = Debug|.NET
+		{49419D91-3F31-422C-8B7E-476EE3A7281D}.Debug.Build.0 = Debug|.NET
+		{49419D91-3F31-422C-8B7E-476EE3A7281D}.Release.ActiveCfg = Release|.NET
+		{49419D91-3F31-422C-8B7E-476EE3A7281D}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

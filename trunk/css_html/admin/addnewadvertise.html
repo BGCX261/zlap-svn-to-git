@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<title>Admin website</title>
+</head>
+<body>
+<table align="center" width="940" cellpadding="0" cellspacing="0" border="0" height="70">
+  <tr>
+    <td height="5"></td>
+  </tr>
+  <tr>
+    <td align="center" class="btdlogin"><span class="theader">Khu vực dành cho quản trị thông tin trên website</span></td>
+  </tr>
+</table>
+<table align="center" width="940" cellpadding="0" cellspacing="0" border="0">
+<tr>
+  <td width="175" height="7"></td>
+  <td width="7"></td>
+  <td width="758"></td>
+</tr>
+<tr>
+  <td width="175" valign="top" height="500"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td class="tbl">Quản trị thông tin sản phẩm</td>
+      </tr>
+      <tr>
+        <td class="btdbl" valign="top"><span class="tfunc"> <a href="#">Cập nhật ảnh sản phẩm</a></span><br />
+          <span class="tfunc"><a href="#">Cập nhật ảnh linh kiên</a></span><br />
+          <span class="tfunc"><a href="#">Sản phẩm ở trang chính</a></span><br />
+          <span class="tfunc"><a href="#">Sản phẩm bán chạy</a></span><br />
+        </td>
+      </tr>
+      <tr>
+        <td height="7"></td>
+      </tr>
+      <tr>
+        <td class="tbl">Quản trị Tin tức</td>
+      </tr>
+      <tr>
+        <td class="btdbl" valign="top"><span class="tfunc"> <a href="#">Tin tức</a></span><br />
+          <span class="tfunc"><a href="#">Nhóm tin tức</a></span> </td>
+      </tr>
+    </table></td>
+  <td width="7"></td>
+  <td width="758" valign="top"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td class="tbl">Thêm mới liên kết website</td>
+      </tr>
+      <tr>
+        <td class="btdbl" height="450" valign="top"><table cellpadding="0" cellspacing="0" border="0" width="700">
+            <tr height='30'>
+              <td colspan="2" class="title2">Nhập nội dung liên kết website</td>
+            </tr>
+            <tr>
+              <td colspan="2" height="2"></td>
+            </tr>
+			<tr>
+              <td colspan="2"><div id="diverror"><div class="diverror">Lỗi lỗi lỗi</div></div></td>
+            </tr>
+			<tr>
+              <td colspan="2" height="2"></td>
+            </tr>
+			<tr class="bgtr">
+              <td width="100" class="title3">Tiêu đề nhóm <u>*</u></td>
+              <td><input type="text" id="txttitle" runat="server" maxlength="64" class="txtbox1" />
+                (<=64)</td>
+            </tr>
+            <tr>
+              <td colspan="2" height="5"></td>
+            </tr>
+			<tr>
+              <td width="100" class="title3">nhóm tin tức</td>
+              <td><select class="txtbox1"><option value="1">Nhóm tin chung</option><option value="2">Tin khuyến mại của công ty</option></select></td>
+            </tr>
+            <tr>
+              <td colspan="2" height="5"></td>
+            </tr>
+			<tr class="bgtr">
+              <td width="100" class="title3">Mô tả ngắn gọn</td>
+              <td><textarea class="txtbox2" rows="3"></textarea></td>
+            </tr>
+            <tr>
+              <td colspan="2" height="5"></td>
+            </tr>
+			<tr>
+              <td width="100" class="title3">Nội dung tin tức</td>
+              <td><textarea class="txtbox2" rows="7"></textarea></td>
+            </tr>
+            <tr>
+              <td colspan="2" height="5"></td>
+            </tr>
+			<tr class="bgtr">
+              <td width="100" class="title3">Ảnh kèm theo</td>
+              <td><input type="file" runat="server" maxlength="64" class="txtbox1" /></td>
+            </tr>
+            <tr>
+              <td colspan="2" height="5"></td>
+            </tr>
+            <tr>
+              <td class="title3">Hiển thị</td>
+              <td><input type="checkbox" id="checkshow" runat="server" class="check" /></td>
+            </tr>
+            <tr>
+              <td colspan="2" height="5"></td>
+            </tr>
+            <tr class="bgtr">
+              <td style="height: 24px"></td>
+              <td style="height: 24px"><input type="button" id="btedit" runat="server" class="button" value="Chỉnh sửa" onserverclick="btedit_ServerClick" /><input type="button" class="button" value="Quay lại" /></td>
+            </tr>
+          </table></td>
+      </tr>
+    </table>
+	</td></tr></table>
+</body>
+</html>

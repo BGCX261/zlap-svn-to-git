@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <search>
+    <title>Ruby red color</title>
+    <value>red color</value>
+  </search>
+  <search>
+    <title>Màu xanh</title>
+    <value>blue color</value>
+  </search>
+  <search>
+    <title>Màu trắng bạc</title>
+    <value>white</value>
+  </search>
+  <search>
+    <title>Màu Đen</title>
+    <value>black</value>
+  </search>
+  <search>
+    <title>Màu vàng</title>
+    <value>yellow</value>
+  </search>
+  <search>
+    <title>Màu hồng</title>
+    <value>pink</value>
+  </search>
+  <search>
+    <title>Màu nâu</title>
+    <value>brown</value>
+  </search>
+  <search>
+    <title>Màu xám</title>
+    <value>grey</value>
+  </search>
+</root>

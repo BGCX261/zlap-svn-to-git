@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<language_code>
+  <code>
+    <key>home</key>
+    <des>link home</des>
+  </code>
+  <code>
+    <key>product</key>
+    <des>link all product</des>
+  </code>
+  <code>
+    <key>article</key>
+    <des>link all articles</des>
+  </code>
+  <code>
+    <key>contact</key>
+    <des>link contact</des>
+  </code>
+  <code>
+    <key>download</key>
+    <des>Download price and software</des>
+  </code>
+  <code>
+    <key>feedback</key>
+    <des>link feed back</des>
+  </code>
+  <code>
+    <key>help</key>
+    <des>link help</des>
+  </code>
+  <code>
+    <key>tsearch</key>
+    <des>Title search</des>
+  </code>
+  <code>
+    <key>msearch</key>
+    <des>message search</des>
+  </code>
+  <code>
+    <key>avsearch</key>
+    <des>Advance search</des>
+  </code>
+  <code>
+    <key>blbrand</key>
+    <des>block Brand</des>
+  </code>
+  <code>
+    <key>sapro</key>
+    <des>see all product</des>
+  </code>
+  <code>
+    <key>listpro</key>
+    <des>Catalogue product</des>
+  </code>
+  <code>
+    <key>component</key>
+    <des>Component of product</des>
+  </code>
+  <code>
+    <key>otherpro</key>
+    <des>Other product</des>
+  </code>
+  <code>
+    <key>blbestsell</key>
+    <des>Block Product best sell</des>
+  </code>
+  <code>
+    <key>currentpage</key>
+    <des>Current access page</des>
+  </code>
+  <code>
+    <key>mmainpage</key>
+    <des>Message webcome website</des>
+  </code>
+  <code>
+    <key>blmain</key>
+    <des>Product in mainpage</des>
+  </code>
+  <code>
+    <key>tprice</key>
+    <des>title price sell</des>
+  </code>
+  <code>
+    <key>twarranty</key>
+    <des>Title warranty</des>
+  </code>
+  <code>
+    <key>tmonth</key>
+    <des>Title month</des>
+  </code>
+  <code>
+    <key>torder</key>
+    <des>Title order</des>
+  </code>
+  <code>
+    <key>blpro</key>
+    <des>Block Product</des>
+  </code>
+  <code>
+    <key>display</key>
+    <des>Number pro per page</des>
+  </code>
+  <code>
+    <key>spage</key>
+    <des>Goto page</des>
+  </code>
+  <code>
+    <key>firstp</key>
+    <des>First page</des>
+  </code>
+  <code>
+    <key>lastp</key>
+    <des>Last page</des>
+  </code>
+  <code>
+    <key>bcompare</key>
+    <des>Button compare</des>
+  </code>
+  <code>
+    <key>detail</key>
+    <des>See detail product</des>
+  </code>
+  <code>
+    <key>name</key>
+    <des>name product</des>
+  </code>
+  <code>
+    <key>brand</key>
+    <des>Brand name</des>
+  </code>
+  <code>
+    <key>warehouse</key>
+    <des>Warehouse</des>
+  </code>
+  <code>
+    <key>state</key>
+    <des>State</des>
+  </code>
+  <code>
+    <key>outstore</key>
+    <des>Out Store</des>
+  </code>
+  <code>
+    <key>des</key>
+    <des>Description product</des>
+  </code>
+  <code>
+    <key>similar</key>
+    <des>List similar</des>
+  </code>
+  <code>
+    <key>bback</key>
+    <des>Button Back</des>
+  </code>
+  <code>
+    <key>specification</key>
+    <des>Specification product</des>
+  </code>
+  <code>
+    <key>mnothave</key>
+    <des>Message not have product</des>
+  </code>
+  <code>
+    <key>bllogin</key>
+    <des>Block User login</des>
+  </code>
+  <code>
+    <key>blogin</key>
+    <des>button login</des>
+  </code>
+  <code>
+    <key>mforgetp</key>
+    <des>Message forget pass</des>
+  </code>
+  <code>
+    <key>mnewaccount</key>
+    <des>Message new account</des>
+  </code>
+  <code>
+    <key>bluser</key>
+    <des>Block User</des>
+  </code>
+  <code>
+    <key>mfunction</key>
+    <des>Message function user</des>
+  </code>
+  <code>
+    <key>facount</key>
+    <des>Manager Account</des>
+  </code>
+  <code>
+    <key>forder</key>
+    <des>Manage Order customer</des>
+  </code>
+  <code>
+    <key>fsendmail</key>
+    <des>Function Send email</des>
+  </code>
+  <code>
+    <key>ffeedback</key>
+    <des>Function Feedback</des>
+  </code>
+  <code>
+    <key>bout</key>
+    <des>Button Logout</des>
+  </code>
+  <code>
+    <key>blcart</key>
+    <des>Block shopping cart</des>
+  </code>
+  <code>
+    <key>mnumber</key>
+    <des>Message number</des>
+  </code>
+  <code>
+    <key>mtotal</key>
+    <des>message total</des>
+  </code>
+  <code>
+    <key>blstatistical</key>
+    <des>Block Statistical</des>
+  </code>
+  <code>
+    <key>mnuma</key>
+    <des>Message number access</des>
+  </code>
+  <code>
+    <key>monline</key>
+    <des>Message number online</des>
+  </code>
+  <code>
+    <key>blregister</key>
+    <des>Block Register account</des>
+  </code>
+  <code>
+    <key>maccount</key>
+    <des>Message account</des>
+  </code>
+  <code>
+    <key>mpass</key>
+    <des>Message pass</des>
+  </code>
+  <code>
+    <key>mcpass</key>
+    <des>Message confirm pass</des>
+  </code>
+  <code>
+    <key>mfname</key>
+    <des>Message full name</des>
+  </code>
+  <code>
+    <key>mjob</key>
+    <des>Message job title</des>
+  </code>
+  <code>
+    <key>memail</key>
+    <des>message email</des>
+  </code>
+  <code>
+    <key>mmobile</key>
+    <des>message mobile phone</des>
+  </code>
+  <code>
+    <key>mhomep</key>
+    <des>message home phone</des>
+  </code>
+  <code>
+    <key>maddress</key>
+    <des>message address</des>
+  </code>
+  <code>
+    <key>mcode</key>
+    <des>message code</des>
+  </code>
+  <code>
+    <key>mccode</key>
+    <des>message confirm code</des>
+  </code>
+  <code>
+    <key>bsubmit</key>
+    <des>button submit</des>
+  </code>
+  <code>
+    <key>mtregister</key>
+    <des>Message title register</des>
+  </code>
+  <code>
+    <key>merrcommon</key>
+    <des>Message error common</des>
+  </code>
+  <code>
+    <key>mpassl</key>
+    <des>Message pass long 4-15</des>
+  </code>
+  <code>
+    <key>merrpass</key>
+    <des>Message pass incorrect</des>
+  </code>
+  <code>
+    <key>merrcode</key>
+    <des>Message code incorrect</des>
+  </code>
+  <code>
+    <key>merraccount</key>
+    <des>Message error account</des>
+  </code>
+  <code>
+    <key>meaccount</key>
+    <des>Message exist account</des>
+  </code>
+  <code>
+    <key>meemail</key>
+    <des>Message exist email</des>
+  </code>
+  <code>
+    <key>merremail</key>
+    <des>Message error email</des>
+  </code>
+  <code>
+    <key>merrsql</key>
+    <des>Message error connect sql server</des>
+  </code>
+  <code>
+    <key>blforgetp</key>
+    <des>Block Message forget password</des>
+  </code>
+  <code>
+    <key>mtgetpass</key>
+    <des>Title get pass and account</des>
+  </code>
+  <code>
+    <key>mnotemail</key>
+    <des>Message not found email</des>
+  </code>
+  <code>
+    <key>mnotsend</key>
+    <des>message not send email</des>
+  </code>
+  <code>
+    <key>msent</key>
+    <des>Message sent email</des>
+  </code>
+  <code>
+    <key>pocketpc</key>
+    <des>Pock pc, PDA...</des>
+  </code>
+  <code>
+    <key>tjusth</key>
+    <des>Title Justhave product</des>
+  </code>
+  <code>
+    <key>justh</key>
+    <des>product new have...</des>
+  </code>
+  <code>
+    <key>blsearch</key>
+    <des>Title Block Search...</des>
+  </code>
+  <code>
+    <key>slbrand</key>
+    <des>Title Select Brand Laptop</des>
+  </code>
+  <code>
+    <key>slprice</key>
+    <des>Title Select Price</des>
+  </code>
+  <code>
+    <key>slcpu</key>
+    <des>Title Select CPU speed</des>
+  </code>
+  <code>
+    <key>slhdd</key>
+    <des>Title Select HDD size</des>
+  </code>
+  <code>
+    <key>slram</key>
+    <des>Title Select Ram size</des>
+  </code>
+  <code>
+    <key>slscreen</key>
+    <des>Title Select screen size</des>
+  </code>
+  <code>
+    <key>blarticle</key>
+    <des>Title Block Article</des>
+  </code>
+  <code>
+    <key>darticle</key>
+    <des>Detail Article</des>
+  </code>
+  <code>
+    <key>tinfop</key>
+    <des>Title Information product</des>
+  </code>
+  <code>
+    <key>bupdate</key>
+    <des>Button Update</des>
+  </code>
+  <code>
+    <key>bcon</key>
+    <des>Button Continue</des>
+  </code>
+  <code>
+    <key>blcompare</key>
+    <des>Title block Compare</des>
+  </code>
+  <code>
+    <key>blselloff</key>
+    <des>Title block product selloff</des>
+  </code>
+  <code>
+    <key>mselloff</key>
+    <des>Message promotions</des>
+  </code>
+  <code>
+    <key>whave</key>
+    <des>Title Product Will have...</des>
+  </code>
+  <code>
+    <key>blwhave</key>
+    <des>Title Block will have...</des>
+  </code>
+  <code>
+    <key>blbestv</key>
+    <des>Block best view product</des>
+  </code>
+  <code>
+    <key>tnview</key>
+    <des>Title Number view product</des>
+  </code>
+  <code>
+    <key>tupdate</key>
+    <des>Updating...</des>
+  </code>
+  <code>
+    <key>loriginal</key>
+    <des>Link products original</des>
+  </code>
+  <code>
+    <key>bloriginal</key>
+    <des>Title block original</des>
+  </code>
+  <code>
+    <key>saoriginal</key>
+    <des>Title see all products original</des>
+  </code>
+  <code>
+    <key>tcolor</key>
+    <des>Title choice color for searching</des>
+  </code>
+  <code>
+    <key>tprepare</key>
+    <des>Title block products prepare out!</des>
+  </code>
+  <code>
+    <key>blbmobi</key>
+    <des>Block Brand Mobile</des>
+  </code>
+  <code>
+    <key>promobi</key>
+    <des>Product mobile</des>
+  </code>
+  <code>
+    <key>blmainmobi</key>
+    <des>Title block main mobile</des>
+  </code>
+</language_code>

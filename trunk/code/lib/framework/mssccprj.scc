@@ -1,0 +1,5 @@
+SCC = This is a Source Code Control file
+
+[framework.csproj]
+SCC_Aux_Path = "\\10.0.0.255\Web group\VSS\laptopcheap"
+SCC_Project_Name = "$/lib/framework", AFAAAAAA

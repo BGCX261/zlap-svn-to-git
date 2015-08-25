@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <product>
+    <nameapp>idtypeproduct</nameapp>
+    <typeid>2</typeid>
+    <nameappunit>currency</nameappunit>
+    <unit>VND</unit>
+  </product>
+  <product>
+    <nameapp>idtypemobile</nameapp>
+    <typeid>1</typeid>
+    <nameappunit>currencymobile</nameappunit>
+    <unit>USD</unit>
+  </product>
+  <product>
+    <nameapp>apppda</nameapp>
+    <typeid>3</typeid>
+    <nameappunit>
+    </nameappunit>
+    <unit>
+    </unit>
+  </product>
+</root>

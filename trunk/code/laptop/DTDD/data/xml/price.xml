@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <search>
+    <title>-Dưới 1 triệu</title>
+    <value1></value1>
+    <value2>1</value2>
+  </search>
+  <search>
+    <title>-Từ 1 đến 2 triệu</title>
+    <value1>1</value1>
+    <value2>2</value2>
+  </search>
+  <search>
+    <title>-Từ 2 đến 4 triệu</title>
+    <value1>2</value1>
+    <value2>4</value2>
+  </search>
+  <search>
+    <title>-Từ 4 đến 6 triệu</title>
+    <value1>4</value1>
+    <value2>6</value2>
+  </search>
+  <search>
+    <title>-Từ 6 đến 8 triệu</title>
+    <value1>6</value1>
+    <value2>8</value2>
+  </search>
+  <search>
+    <title>-Từ 8 đến 10 triệu</title>
+    <value1>8</value1>
+    <value2>10</value2>
+  </search>
+  <search>
+    <title>-Trên 10 triệu</title>
+    <value1>10</value1>
+    <value2></value2>
+  </search>
+</root>

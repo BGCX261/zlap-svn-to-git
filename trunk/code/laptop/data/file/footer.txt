@@ -1,0 +1,87 @@
+<table width="940" align="center" border="0" cellpadding="0" cellspacing="0">
+  <tr><td height="8"></td></tr>
+  <tr>
+    <td align="center" class="bg_bottom">
+    <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
+    <tr><td colspan="4" class="text_2" align="left"><span class="text_title"><a href="http://www.maytinhxachtay.com">www.MayTinhXachTay.com</a></span> Chuyên doanh sỉ và lẻ:</td></tr>
+	<tr><td height='3'></td></tr>
+<tr align="left" height="22"><td class="arrow">Kinh Doanh:</td><td>PHÂN PHỐI MIỀN NAM: <span class="text_5">(08)2214 8675, 0946769396</span> - PHÂN PHỐI MIỀN BẮC: <span class="text_5">(04)2245 3273, 0955169893</span></td></tr>
+	<tr><td height='3'></td></tr>
+<tr align="left" height="22"><td class="arrow" width="94">Sài Gòn:</td><td>Trung tâm phân phối</td></tr>
+    <tr align="left" height="22"><td align='center'>1:</td><td><span class="text_5">Showroom Nguyễn Ngọc Laptop,236-Cao Thắng nối dài. P12. Q 10-TP.HCM,(08)2243 0786. 0932064682</span></td></tr>
+	<tr><td height='3'></td></tr>
+	<tr align="left" height="22"><td align='center'>2:</td><td><span class="text_5">Showroom Công Nghệ Di Động BTX, 77C Bùi Thị Xuân - P. Phạm Ngũ Lão - Q1 - TP.HCM, Tel: (08)2248 8736, (08)2248.8737, 0169.2204.686</span></td></tr>
+  	<tr><td height='3'></td></tr>
+	<tr align="left" height="22"><td align='center'>3:</td><td><span class="text_5">Showroom Công Nghệ Di Động, 125 Trường Chinh, Phường Tân Thới Nhất, Q.12, TP HCM, Tel: (08)6656 7069, (08)6656 7068, 01284028068 </span></td></tr>
+<tr><td height='3'></td></tr>
+	<tr align="left" height="22">
+	<td align='center'>4:</td>
+	<td><span class="text_5">Showroom Công Nghệ Di Động Thủ Đức. 153 Đặng Văn Bi, phường Trường Thọ, Quận Thủ Đức, TPHCM, Tel: (08) 66748171, 
+</span></td></tr>
+<tr><td height='3'></td></tr>
+<tr align="left" height="22"><td class="arrow" width="94">Hà Nội:</td><td>Trung tâm phân phối</td></tr>
+	<tr align="left" height="22">
+	<td align='center'>1:</td><td><span class="text_5">Showroom Điện Tử Sài Gòn, 270 Đào Duy Anh (124 Xã Đàn) - Q. Đống Đa, Hà Nội, Tel: (04)3572 0573, (04)3572 0574, 0915025448.</span></td>
+	</tr>
+<tr><td height='3'></td></tr>
+	<tr align="left" height="22">
+	<td align='center'>2:</td><td><span class="text_5">Showroom Nguyễn Ngọc Laptop, 32 Thái Hà -Q. Đống Đa, Hà Nội: (04)3537 8840, (04)3537 8841, 0912745204. Fax: 84-4-5378839.</span></td>
+	</tr>
+<tr><td height='3'></td></tr>
+	<tr align="left" height="22">
+	<td align='center'>3:</td><td><span class="text_5">Showroom Công Nghệ Di Động, 245 Tôn Đức Thắng -Q. Đống Đa, Hà Nội: (04)3513 3520, 0916521748.</span></td>
+	</tr>
+<tr><td height='3'></td></tr>
+	<tr align="left" height="22">
+	<td class="arrow">Đà Nẵng:</td><td><span class="text_5">Showroom Công Nghệ Di Động, 144 Hàm Nghi- Đà Nẵng, Tel: (0511)3656 848, 01263664142, 01254480698.</span></td>
+	</tr>
+<tr><td height='3'></td></tr>
+	<tr align="left" height="22">
+	<td class="arrow">Cần Thơ:</td><td><span class="text_5">Showroom Công Nghệ Di Động Tây Đô, 102 Trần Hưng Đạo - Q Ninh Kiều - TP Cần Thơ. Tel: (0710)6266 889, (0710)6262 979, 01686756413</span></td>
+	</tr>
+<tr><td height='3'></td></tr>
+	<tr align="left" height="22">
+	<td class="arrow">Quy Nhơn:</td>
+	<td><span class="text_5">Showroom Công Nghệ Di Động Quy Nhơn, 27 Lý Thường Kiệt - P. Lê Hồng Phong - TP. Quy Nhơn. Tel: (056)3820 627, 01265005323
+</span></td>
+        </tr>
+<tr><td height='3'></td></tr>
+	<tr align="left" height="22">
+        <td class="arrow">Nha Trang:</td>
+	<td><span class="text_5">Showroom Công Nghệ Di Động Nha Trang, 46 Thống Nhất, Phường Vạn Thạnh, TP Nha Trang.Tel: (058) 3561179
+</span></td>
+        </tr>
+<tr><td height='3'></td></tr>
+	<tr align="left" height="22">
+	<td class="arrow">Nghệ An:</td>
+	<td><span class="text_5">Showroom Công Nghệ Di Động Vinh - Nghệ An.  46 Minh Khai, TP Vinh, Nghệ An Tel: (038) 8602334/ 8602335, 01657171899</span></td>
+        </tr>
+<tr><td height='3'></td></tr>
+	<tr align="left" height="22">
+	<td class="arrow">Hải Phòng:</td>
+	<td><span class="text_5">Showroom Công Nghệ Di Động Hải Phòng. 127c Lương Khánh Thiện, Phường Cầu Đất, Quận Ngô Quyền (031) 3843396, 01277204420</span></td>
+        </tr>
+<tr><td height='3'></td></tr>
+	<tr align="left" height="22">
+	<td class="arrow">Đồng Nai:</td>
+	<td><span class="text_5">Showroom Công Nghệ Di Động Biên Hòa. 232 Nguyễn Ái Quốc, phường Tân Tiến, TP Biên Hòa, Đồng Nai (061) 6609962, 6609963</span></td>
+        </tr>
+<tr><td height='3'></td></tr>
+	<tr align="left" height="22">
+	<td class="arrow">Vũng Tàu:</td>
+	<td><span class="text_5">Showroom Công Nghệ Di Động Vũng Tàu.(Chuẩn bị khai trương)</span></td>
+        </tr>
+<tr><td height='3'></td></tr>
+	<tr align="left" height="22">
+	<td class="arrow" colspan="2">Bảo hành Sài Gòn: <span class="text_5">Hậu Mãi Nam Sơn, 75 Hùng Vương, phường 4, Quận 5, TPHCM, (08) 38337032- 39381140 - 39381102- 39381103 -HOTLINE: 0955169896 </span></td>
+        </tr>
+	<tr><td height='3'></td></tr>
+	<tr align="left" height="22">
+	<td class="arrow" colspan="2">Bảo hành Hà Nội: <span class="text_5">Hậu Mãi Nam Sơn, 340 Khâm Thiên - Phường Thổ Quan - Quận Đống Đa - TP Hà Nội, (04) 6296 1269, 0944433779. Fax: 84-4-5724519.</span></td>
+	</tr>
+	<tr><td height="30" style="color:#6F6F6F;" align="center" colspan="2">© 2007-2010  www.MayTinhXachTay.com</td></tr>
+  </table>
+    </td>
+  </tr>
+  <tr><td height='12'></td></tr>
+  </table>

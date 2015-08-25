@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <search>
+    <title>Card Video 64 Mb</title>
+    <value>64</value>
+  </search>
+  <search>
+    <title>Card Video 128 Mb</title>
+    <value>128</value>
+  </search>
+  <search>
+    <title>Card Video 512 Mb</title>
+    <value>512</value>
+  </search>
+</root>

@@ -1,0 +1,476 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE langs SYSTEM "../dtd/langs.dtd"[]>
+<langs>
+  <lang>
+    <key>home</key>
+    <value>Home</value>
+  </lang>
+  <lang>
+    <key>product</key>
+    <value>All laptops</value>
+  </lang>
+  <lang>
+    <key>article</key>
+    <value>News</value>
+  </lang>
+  <lang>
+    <key>contact</key>
+    <value>Contacts</value>
+  </lang>
+  <lang>
+    <key>download</key>
+    <value>Download</value>
+  </lang>
+  <lang>
+    <key>feedback</key>
+    <value>Feedback</value>
+  </lang>
+  <lang>
+    <key>help</key>
+    <value>Helps</value>
+  </lang>
+  <lang>
+    <key>tsearch</key>
+    <value>Search</value>
+  </lang>
+  <lang>
+    <key>msearch</key>
+    <value>Input text search</value>
+  </lang>
+  <lang>
+    <key>avsearch</key>
+    <value>Advance search</value>
+  </lang>
+  <lang>
+    <key>blbrand</key>
+    <value>Laptop brand name</value>
+  </lang>
+  <lang>
+    <key>sapro</key>
+    <value>See all laptops</value>
+  </lang>
+  <lang>
+    <key>listpro</key>
+    <value>Catalogue product</value>
+  </lang>
+  <lang>
+    <key>component</key>
+    <value>Laptop component</value>
+  </lang>
+  <lang>
+    <key>otherpro</key>
+    <value>Other products</value>
+  </lang>
+  <lang>
+    <key>blbestsell</key>
+    <value>Laptops Best Sell</value>
+  </lang>
+  <lang>
+    <key>currentpage</key>
+    <value>www.MayTinhXachTay.com</value>
+  </lang>
+  <lang>
+    <key>mmainpage</key>
+    <value>Hello, Welcome to website www.maytinhxachtay.com. Number access {0}</value>
+  </lang>
+  <lang>
+    <key>blmain</key>
+    <value>Feature laptops</value>
+  </lang>
+  <lang>
+    <key>tprice</key>
+    <value>Price</value>
+  </lang>
+  <lang>
+    <key>twarranty</key>
+    <value>Warranty</value>
+  </lang>
+  <lang>
+    <key>tmonth</key>
+    <value>Month</value>
+  </lang>
+  <lang>
+    <key>torder</key>
+    <value>Buy Now</value>
+  </lang>
+  <lang>
+    <key>blpro</key>
+    <value>There are {0} products</value>
+  </lang>
+  <lang>
+    <key>display</key>
+    <value>Display</value>
+  </lang>
+  <lang>
+    <key>spage</key>
+    <value>See page</value>
+  </lang>
+  <lang>
+    <key>firstp</key>
+    <value>First page</value>
+  </lang>
+  <lang>
+    <key>lastp</key>
+    <value>Last page</value>
+  </lang>
+  <lang>
+    <key>bcompare</key>
+    <value>Compare</value>
+  </lang>
+  <lang>
+    <key>detail</key>
+    <value>See Product Detail</value>
+  </lang>
+  <lang>
+    <key>name</key>
+    <value>Name Model</value>
+  </lang>
+  <lang>
+    <key>brand</key>
+    <value>Brand name</value>
+  </lang>
+  <lang>
+    <key>warehouse</key>
+    <value>WareHouse</value>
+  </lang>
+  <lang>
+    <key>state</key>
+    <value>State</value>
+  </lang>
+  <lang>
+    <key>outstore</key>
+    <value>Out Store</value>
+  </lang>
+  <lang>
+    <key>des</key>
+    <value>Product description</value>
+  </lang>
+  <lang>
+    <key>similar</key>
+    <value>Similar Products</value>
+  </lang>
+  <lang>
+    <key>bback</key>
+    <value>Go back</value>
+  </lang>
+  <lang>
+    <key>specification</key>
+    <value>Product specification</value>
+  </lang>
+  <lang>
+    <key>mnothave</key>
+    <value>There are not products</value>
+  </lang>
+  <lang>
+    <key>bllogin</key>
+    <value>Hello, Please Login account</value>
+  </lang>
+  <lang>
+    <key>blogin</key>
+    <value>Login</value>
+  </lang>
+  <lang>
+    <key>mforgetp</key>
+    <value>Do You forget password ?</value>
+  </lang>
+  <lang>
+    <key>mnewaccount</key>
+    <value>Are you new customer ?</value>
+  </lang>
+  <lang>
+    <key>bluser</key>
+    <value>Hello customer</value>
+  </lang>
+  <lang>
+    <key>mfunction</key>
+    <value>Function for you</value>
+  </lang>
+  <lang>
+    <key>facount</key>
+    <value>Manage account</value>
+  </lang>
+  <lang>
+    <key>forder</key>
+    <value>Manage Orders</value>
+  </lang>
+  <lang>
+    <key>fsendmail</key>
+    <value>Send Email</value>
+  </lang>
+  <lang>
+    <key>ffeedback</key>
+    <value>Feedback</value>
+  </lang>
+  <lang>
+    <key>bout</key>
+    <value>Logout</value>
+  </lang>
+  <lang>
+    <key>blcart</key>
+    <value>Shopping cart</value>
+  </lang>
+  <lang>
+    <key>mnumber</key>
+    <value>Number</value>
+  </lang>
+  <lang>
+    <key>mtotal</key>
+    <value>Total</value>
+  </lang>
+  <lang>
+    <key>blstatistical</key>
+    <value>Statistical website</value>
+  </lang>
+  <lang>
+    <key>mnuma</key>
+    <value>Number access</value>
+  </lang>
+  <lang>
+    <key>monline</key>
+    <value>Number online</value>
+  </lang>
+  <lang>
+    <key>blregister</key>
+    <value>Register new account</value>
+  </lang>
+  <lang>
+    <key>maccount</key>
+    <value>Account Login</value>
+  </lang>
+  <lang>
+    <key>mpass</key>
+    <value>Password</value>
+  </lang>
+  <lang>
+    <key>mcpass</key>
+    <value>Confirm password</value>
+  </lang>
+  <lang>
+    <key>mfname</key>
+    <value>Full name</value>
+  </lang>
+  <lang>
+    <key>mjob</key>
+    <value>Job</value>
+  </lang>
+  <lang>
+    <key>memail</key>
+    <value>Email</value>
+  </lang>
+  <lang>
+    <key>mmobile</key>
+    <value>Mobile</value>
+  </lang>
+  <lang>
+    <key>mhomep</key>
+    <value>Home phone</value>
+  </lang>
+  <lang>
+    <key>maddress</key>
+    <value>Address</value>
+  </lang>
+  <lang>
+    <key>mcode</key>
+    <value>Code</value>
+  </lang>
+  <lang>
+    <key>mccode</key>
+    <value>Confirm code</value>
+  </lang>
+  <lang>
+    <key>bsubmit</key>
+    <value>Submit</value>
+  </lang>
+  <lang>
+    <key>mtregister</key>
+    <value>Hello, for register new account, please you input your information</value>
+  </lang>
+  <lang>
+    <key>merrcommon</key>
+    <value>Please, input necessary information</value>
+  </lang>
+  <lang>
+    <key>mpassl</key>
+    <value>Password is long from 4 to 15 charecters</value>
+  </lang>
+  <lang>
+    <key>merrpass</key>
+    <value>Confirm password incorrect</value>
+  </lang>
+  <lang>
+    <key>merrcode</key>
+    <value>Confirm code incorrect</value>
+  </lang>
+  <lang>
+    <key>merraccount</key>
+    <value>Account is only a-z or A-Z</value>
+  </lang>
+  <lang>
+    <key>meaccount</key>
+    <value>Account is exist, please input another account</value>
+  </lang>
+  <lang>
+    <key>meemail</key>
+    <value>Email is Exist, please input another email</value>
+  </lang>
+  <lang>
+    <key>merremail</key>
+    <value>Email is incorrect</value>
+  </lang>
+  <lang>
+    <key>merrsql</key>
+    <value>Error connect to sql, please try again...</value>
+  </lang>
+  <lang>
+    <key>blforgetp</key>
+    <value>Forget password or account login</value>
+  </lang>
+  <lang>
+    <key>mtgetpass</key>
+    <value>Please input your email</value>
+  </lang>
+  <lang>
+    <key>mnotemail</key>
+    <value>Not found email</value>
+  </lang>
+  <lang>
+    <key>mnotsend</key>
+    <value>Not sent request to email, please try again...</value>
+  </lang>
+  <lang>
+    <key>msent</key>
+    <value>Email sent, please check your email</value>
+  </lang>
+  <lang>
+    <key>pocketpc</key>
+    <value>Pocket PC, PDA</value>
+  </lang>
+  <lang>
+    <key>tjusth</key>
+    <value>Laptops new have</value>
+  </lang>
+  <lang>
+    <key>justh</key>
+    <value>New Laptops</value>
+  </lang>
+  <lang>
+    <key>blsearch</key>
+    <value>Search Laptops</value>
+  </lang>
+  <lang>
+    <key>slbrand</key>
+    <value>Choice Brand</value>
+  </lang>
+  <lang>
+    <key>slprice</key>
+    <value>Choice Price</value>
+  </lang>
+  <lang>
+    <key>slcpu</key>
+    <value>Choice CPU</value>
+  </lang>
+  <lang>
+    <key>slhdd</key>
+    <value>Choice HDD</value>
+  </lang>
+  <lang>
+    <key>slram</key>
+    <value>Choice RAM</value>
+  </lang>
+  <lang>
+    <key>slscreen</key>
+    <value>Choice Screen</value>
+  </lang>
+  <lang>
+    <key>blarticle</key>
+    <value>News</value>
+  </lang>
+  <lang>
+    <key>darticle</key>
+    <value>Artticle detail</value>
+  </lang>
+  <lang>
+    <key>tinfop</key>
+    <value>Products in cart</value>
+  </lang>
+  <lang>
+    <key>bupdate</key>
+    <value>Update</value>
+  </lang>
+  <lang>
+    <key>bcon</key>
+    <value>Continue Buy</value>
+  </lang>
+  <lang>
+    <key>blcompare</key>
+    <value>Compare laptops</value>
+  </lang>
+  <lang>
+    <key>blselloff</key>
+    <value>Special promotion</value>
+  </lang>
+  <lang>
+    <key>mselloff</key>
+    <value>Special promotion</value>
+  </lang>
+  <lang>
+    <key>whave</key>
+    <value>Laptops</value>
+  </lang>
+  <lang>
+    <key>blwhave</key>
+    <value>Laptops</value>
+  </lang>
+  <lang>
+    <key>blbestv</key>
+    <value>Top {0} Laptops view</value>
+  </lang>
+  <lang>
+    <key>tnview</key>
+    <value>View number</value>
+  </lang>
+  <lang>
+    <key>tupdate</key>
+    <value>Updating</value>
+  </lang>
+  <lang>
+    <key>loriginal</key>
+    <value>Original products</value>
+  </lang>
+  <lang>
+    <key>bloriginal</key>
+    <value>Original Products</value>
+  </lang>
+  <lang>
+    <key>saoriginal</key>
+    <value>See All</value>
+  </lang>
+  <lang>
+    <key>tcolor</key>
+    <value>Choice colour</value>
+  </lang>
+  <lang>
+    <key>tprepare</key>
+    <value>Products prepare out. Quick, quick, quick...</value>
+  </lang>
+  <lang>
+    <key>tnothname</key>
+    <value>There are not products in brand {0}. Please call to our stores.</value>
+  </lang>
+  <lang>
+    <key>thname</key>
+    <value>There are {1} products in brand {0}.</value>
+  </lang>
+  <lang>
+    <key>blbmobi</key>
+    <value>Brand of Mobile</value>
+  </lang>
+  <lang>
+    <key>promobi</key>
+    <value>Mobile phone</value>
+  </lang>
+  <lang>
+    <key>blmainmobi</key>
+    <value>Special mobile....</value>
+  </lang>
+</langs>

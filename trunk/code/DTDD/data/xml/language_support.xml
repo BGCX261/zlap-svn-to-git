@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<lang_support>
+  <lang>
+    <id>1</id>
+    <name>Tiếng Việt</name>
+    <abbreviate>VN</abbreviate>
+    <url>vietnamese.xml</url>
+    <flag>flag_vietname.png</flag>
+    <active>2</active>
+  </lang>
+  <lang>
+    <id>2</id>
+    <name>English</name>
+    <abbreviate>EN</abbreviate>
+    <url>english.xml</url>
+    <flag>flag_england.png</flag>
+    <active>1</active>
+  </lang>
+</lang_support>

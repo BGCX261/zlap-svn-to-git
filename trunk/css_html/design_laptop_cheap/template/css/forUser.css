@@ -1,0 +1,55 @@
+/* CSS Document */
+.bgtrU1
+{
+	background-color:#F3F3F3;
+	height:28px;
+}
+.bgtrU2
+{
+	height:28px;
+}
+.treg
+{
+	color:#FF9900;
+	padding-left:10px;
+	height:30px;
+	text-align:left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+}
+.tmessage
+{
+	color:#333333;
+	font-weight:bold;
+	font-size:11px;
+	padding-left:10px;
+	width:140px;
+}
+.tmessage u
+{
+	color:#FF0000;
+	text-decoration:none;
+}
+.tboxuser1
+{
+	margin:0px;
+	color:#0000FF;
+	width:150px;
+}
+.tboxuser2
+{
+	margin:0px;
+	color:#0000FF;
+	width:300px;
+}
+.diverror
+{
+	border-color:#D4D4D4;
+	border-width:1px;
+	border-style:solid;
+	color:#FF0000;
+	padding:5px;
+	font-size:12px;
+	line-height:20px;
+}

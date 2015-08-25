@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <search>
+    <title>Từ 20-40 Gb</title>
+    <value>20,40</value>
+  </search>
+  <search>
+    <title>Từ 40-80 Gb</title>
+    <value>40,60,80</value>
+  </search>
+  <search>
+    <title>Từ 80-120 Gb</title>
+    <value>80,100,120</value>
+  </search>
+  <search>
+    <title>Từ 120-160 Gb</title>
+    <value>120,160</value>
+  </search>
+  <search>
+    <title>Từ 160-200 Gb</title>
+    <value>160,180,200</value>
+  </search>
+  <search>
+    <title>Từ 200-240 Gb</title>
+    <value>200,240</value>
+  </search>
+  <search>
+    <title>Trên 240 Gb</title>
+    <value>250,260,320</value>
+  </search>
+</root>

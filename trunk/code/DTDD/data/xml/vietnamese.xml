@@ -1,0 +1,456 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE langs SYSTEM "../dtd/langs.dtd"[]>
+<langs>
+  <lang>
+    <key>home</key>
+    <value>Trang chủ</value>
+  </lang>
+  <lang>
+    <key>product</key>
+    <value>Máy tính xách tay</value>
+  </lang>
+  <lang>
+    <key>article</key>
+    <value>Tin tức</value>
+  </lang>
+  <lang>
+    <key>contact</key>
+    <value>Địa chỉ liên hệ</value>
+  </lang>
+  <lang>
+    <key>download</key>
+    <value>Tải báo giá</value>
+  </lang>
+  <lang>
+    <key>feedback</key>
+    <value>Góp ý</value>
+  </lang>
+  <lang>
+    <key>help</key>
+    <value>Trợ giúp</value>
+  </lang>
+  <lang>
+    <key>tsearch</key>
+    <value>Tìm kiếm</value>
+  </lang>
+  <lang>
+    <key>msearch</key>
+    <value>Từ tìm kiếm</value>
+  </lang>
+  <lang>
+    <key>avsearch</key>
+    <value>Tìm kiếm nâng cao</value>
+  </lang>
+  <lang>
+    <key>blbrand</key>
+    <value>Nhãn hiệu laptop</value>
+  </lang>
+  <lang>
+    <key>sapro</key>
+    <value>Xem tất cả</value>
+  </lang>
+  <lang>
+    <key>listpro</key>
+    <value>Danh mục sản phẩm</value>
+  </lang>
+  <lang>
+    <key>component</key>
+    <value>Linh kiện máy tính</value>
+  </lang>
+  <lang>
+    <key>otherpro</key>
+    <value>Các sản phẩm khác</value>
+  </lang>
+  <lang>
+    <key>blbestsell</key>
+    <value>Bán chạy nhất tháng</value>
+  </lang>
+  <lang>
+    <key>currentpage</key>
+    <value>Bạn đang truy cập đến</value>
+  </lang>
+  <lang>
+    <key>mmainpage</key>
+    <value>Chào mừng bạn đến với wesite maytinhxachtay.com. Chúng tôi đã đón nhận {0} lượt truy cập</value>
+  </lang>
+  <lang>
+    <key>blmain</key>
+    <value>Chúng tôi xin giới thiệu một số sản phẩm nổi bật trong tuần</value>
+  </lang>
+  <lang>
+    <key>tprice</key>
+    <value>Giá bán</value>
+  </lang>
+  <lang>
+    <key>twarranty</key>
+    <value>Bảo hành</value>
+  </lang>
+  <lang>
+    <key>tmonth</key>
+    <value>Tháng</value>
+  </lang>
+  <lang>
+    <key>torder</key>
+    <value>Đặt hàng</value>
+  </lang>
+  <lang>
+    <key>blpro</key>
+    <value>Chúng tôi có {0} sản phẩm cho bạn lựa chọn</value>
+  </lang>
+  <lang>
+    <key>display</key>
+    <value>Hiển thị</value>
+  </lang>
+  <lang>
+    <key>spage</key>
+    <value>Xem trang</value>
+  </lang>
+  <lang>
+    <key>firstp</key>
+    <value>Trang đầu</value>
+  </lang>
+  <lang>
+    <key>lastp</key>
+    <value>Trang cuối</value>
+  </lang>
+  <lang>
+    <key>bcompare</key>
+    <value>So sánh</value>
+  </lang>
+  <lang>
+    <key>detail</key>
+    <value>Chi tiết sản phẩm</value>
+  </lang>
+  <lang>
+    <key>name</key>
+    <value>Tên Model</value>
+  </lang>
+  <lang>
+    <key>brand</key>
+    <value>Nhãn hiệu</value>
+  </lang>
+  <lang>
+    <key>warehouse</key>
+    <value>Hàng tại</value>
+  </lang>
+  <lang>
+    <key>state</key>
+    <value>Trạng thái</value>
+  </lang>
+  <lang>
+    <key>outstore</key>
+    <value>Hết hàng</value>
+  </lang>
+  <lang>
+    <key>des</key>
+    <value>Mô tả sản phẩm</value>
+  </lang>
+  <lang>
+    <key>similar</key>
+    <value>Sản phẩm tương tự</value>
+  </lang>
+  <lang>
+    <key>bback</key>
+    <value>Quay lại</value>
+  </lang>
+  <lang>
+    <key>specification</key>
+    <value>Thông tin cấu hình</value>
+  </lang>
+  <lang>
+    <key>mnothave</key>
+    <value>Không có sản phẩm nào</value>
+  </lang>
+  <lang>
+    <key>bllogin</key>
+    <value>Xin mời bạn đăng nhập</value>
+  </lang>
+  <lang>
+    <key>blogin</key>
+    <value>Đăng nhập</value>
+  </lang>
+  <lang>
+    <key>mforgetp</key>
+    <value>Bạn quên mật khẩu ?</value>
+  </lang>
+  <lang>
+    <key>mnewaccount</key>
+    <value>Bạn là khách hàng mới ?</value>
+  </lang>
+  <lang>
+    <key>bluser</key>
+    <value>Xin chào khách hàng</value>
+  </lang>
+  <lang>
+    <key>mfunction</key>
+    <value>Các chức năng</value>
+  </lang>
+  <lang>
+    <key>facount</key>
+    <value>Quản lý thông tin cá nhân</value>
+  </lang>
+  <lang>
+    <key>forder</key>
+    <value>Quản lý đơn đặt hàng</value>
+  </lang>
+  <lang>
+    <key>fsendmail</key>
+    <value>Gửi thư yêu cầu</value>
+  </lang>
+  <lang>
+    <key>ffeedback</key>
+    <value>Góp ý kiến với chúng tôi</value>
+  </lang>
+  <lang>
+    <key>bout</key>
+    <value>Thoát</value>
+  </lang>
+  <lang>
+    <key>blcart</key>
+    <value>Giỏ hàng của bạn</value>
+  </lang>
+  <lang>
+    <key>mnumber</key>
+    <value>Số lượng</value>
+  </lang>
+  <lang>
+    <key>mtotal</key>
+    <value>Tổng tiền</value>
+  </lang>
+  <lang>
+    <key>blstatistical</key>
+    <value>Thống kê truy cập</value>
+  </lang>
+  <lang>
+    <key>mnuma</key>
+    <value>Số truy cập</value>
+  </lang>
+  <lang>
+    <key>monline</key>
+    <value>Đang online</value>
+  </lang>
+  <lang>
+    <key>blregister</key>
+    <value>Đăng ký khách hàng</value>
+  </lang>
+  <lang>
+    <key>maccount</key>
+    <value>Tài khoản</value>
+  </lang>
+  <lang>
+    <key>mpass</key>
+    <value>Mật khẩu</value>
+  </lang>
+  <lang>
+    <key>mcpass</key>
+    <value>Xác nhận mật khẩu</value>
+  </lang>
+  <lang>
+    <key>mfname</key>
+    <value>Họ và tên</value>
+  </lang>
+  <lang>
+    <key>mjob</key>
+    <value>Nghề nghiệp</value>
+  </lang>
+  <lang>
+    <key>memail</key>
+    <value>Email</value>
+  </lang>
+  <lang>
+    <key>mmobile</key>
+    <value>Số di động</value>
+  </lang>
+  <lang>
+    <key>mhomep</key>
+    <value>Số cố định</value>
+  </lang>
+  <lang>
+    <key>maddress</key>
+    <value>Địa chỉ</value>
+  </lang>
+  <lang>
+    <key>mcode</key>
+    <value>Mã xác nhận</value>
+  </lang>
+  <lang>
+    <key>mccode</key>
+    <value>Nhập lại mã</value>
+  </lang>
+  <lang>
+    <key>bsubmit</key>
+    <value>Đồng ý</value>
+  </lang>
+  <lang>
+    <key>mtregister</key>
+    <value>Xin chào bạn, để đăng ký tài khoản, xin bạn hãy nhận đầy đủ thông tin cần thiết</value>
+  </lang>
+  <lang>
+    <key>merrcommon</key>
+    <value>Xin bạn hãy nhập đầy đủ thông tin</value>
+  </lang>
+  <lang>
+    <key>mpassl</key>
+    <value>Mật khẩu phải từ 4 - 15 ký tự</value>
+  </lang>
+  <lang>
+    <key>merrpass</key>
+    <value>Mật khẩu xác nhận không đúng</value>
+  </lang>
+  <lang>
+    <key>merrcode</key>
+    <value>Mã xác nhận không đúng</value>
+  </lang>
+  <lang>
+    <key>merraccount</key>
+    <value>Tài khoản đăng nhập chỉ chứa  chữ cái a-z hoẵc A-Z</value>
+  </lang>
+  <lang>
+    <key>meaccount</key>
+    <value>Tài khoản đã tồn tại, xin hãy nhập tài khoản khác</value>
+  </lang>
+  <lang>
+    <key>meemail</key>
+    <value>Địa chỉ email đã tồn tại, xin hãy nhập email khác</value>
+  </lang>
+  <lang>
+    <key>merremail</key>
+    <value>Địa chỉ email không hợp lệ</value>
+  </lang>
+  <lang>
+    <key>merrsql</key>
+    <value>Lỗi kết nối cơ sở dữ liệu, xin bạn hãy thử lại...</value>
+  </lang>
+  <lang>
+    <key>blforgetp</key>
+    <value>Quên mật khẩu, hoặc tài khoản đăng nhập</value>
+  </lang>
+  <lang>
+    <key>mtgetpass</key>
+    <value>Chào bạn, Nếu bạn quên thông tin về mật khẩu hoặc tài khoản đăng nhập. Xin bạn vui lòng nhập email khi đăng ký. Chúng tôi sẽ gửi thư hướng dẫn bạn lấy lại thông tin tài khoản đăng nhập.</value>
+  </lang>
+  <lang>
+    <key>mnotemail</key>
+    <value>Không tìm thấy địa chỉ email nào, xin hãy nhập lại email</value>
+  </lang>
+  <lang>
+    <key>msent</key>
+    <value>Chúng tôi đã gửi thông tin tài khoản đến địa chỉ email của bạn, xin bạn hãy kiểm tra hòm thư.</value>
+  </lang>
+  <lang>
+    <key>mnotsend</key>
+    <value>Lỗi không gửi được email, xin bạn hãy thử lại</value>
+  </lang>
+  <lang>
+    <key>pocketpc</key>
+    <value>Pocket PC, PDA</value>
+  </lang>
+  <lang>
+    <key>tjusth</key>
+    <value>Chúng tôi xin giới thiệu một số sản phẩm mới về</value>
+  </lang>
+  <lang>
+    <key>justh</key>
+    <value>Laptop mới về</value>
+  </lang>
+  <lang>
+    <key>blsearch</key>
+    <value>Tìm kiếm Laptop</value>
+  </lang>
+  <lang>
+    <key>slbrand</key>
+    <value>Chọn nhãn hiệu</value>
+  </lang>
+  <lang>
+    <key>slprice</key>
+    <value>Chọn khoảng giá</value>
+  </lang>
+  <lang>
+    <key>slcpu</key>
+    <value>Chọn tốc độ xử lý</value>
+  </lang>
+  <lang>
+    <key>slhdd</key>
+    <value>Chọn dung lượng ổ cứng</value>
+  </lang>
+  <lang>
+    <key>slram</key>
+    <value>Chọn kích thước RAM</value>
+  </lang>
+  <lang>
+    <key>slscreen</key>
+    <value>Chọn kích thước màn hình</value>
+  </lang>
+  <lang>
+    <key>blarticle</key>
+    <value>Mục tin tức và sự kiện</value>
+  </lang>
+  <lang>
+    <key>darticle</key>
+    <value>Chi tiết tin tức</value>
+  </lang>
+  <lang>
+    <key>tinfop</key>
+    <value>Sản phẩm trong giỏ hàng</value>
+  </lang>
+  <lang>
+    <key>bupdate</key>
+    <value>Cập nhật</value>
+  </lang>
+  <lang>
+    <key>bcon</key>
+    <value>Tiếp tục mua hàng</value>
+  </lang>
+  <lang>
+    <key>blcompare</key>
+    <value>So sánh máy tính xách tay</value>
+  </lang>
+  <lang>
+    <key>blselloff</key>
+    <value>Máy tính xách tay giảm giá đặc biệt</value>
+  </lang>
+  <lang>
+    <key>mselloff</key>
+    <value>Hiện tại MayTinhXachTay đang có chương trình khuyến mãi đặc biệt cho quý khách hàng khi mua sản phẩm sau đây</value>
+  </lang>
+  <lang>
+    <key>whave</key>
+    <value>Hàng sắp về</value>
+  </lang>
+  <lang>
+    <key>blwhave</key>
+    <value>Danh sách máy tính xách tay sắp ra mắt tại công ty</value>
+  </lang>
+  <lang>
+    <key>blbestv</key>
+    <value>Danh sách {0} laptop được xem nhiều nhất trên website MayTinhXachTay.com</value>
+  </lang>
+  <lang>
+    <key>tnview</key>
+    <value>Lượt xem</value>
+  </lang>
+  <lang>
+    <key>tupdate</key>
+    <value>Đang cập nhật</value>
+  </lang>
+  <lang>
+    <key>loriginal</key>
+    <value>Hàng độc</value>
+  </lang>
+  <lang>
+    <key>bloriginal</key>
+    <value>MayTinhXachTay xin giới thiệu {0} sản phẩn đặc biệt</value>
+  </lang>
+  <lang>
+    <key>saoriginal</key>
+    <value>Xem tất cả</value>
+  </lang>
+  <lang>
+    <key>tcolor</key>
+    <value>Chọn màu sắc Laptop</value>
+  </lang>
+  <lang>
+    <key>tprepare</key>
+    <value>Sản phẩm sắp hết hàng, xin quý khách nhanh chân số lượng có hạn</value>
+  </lang>
+</langs>

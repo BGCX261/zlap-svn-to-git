@@ -1,0 +1,11 @@
+bin\Debug\framework.dll
+bin\Debug\framework.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\framework.dll
+obj\Debug\framework.pdb
+bin\Debug\common.dll
+bin\Debug\facade.dll
+bin\Debug\dataaccess.dll
+bin\Debug\dataaccess.pdb
+bin\Debug\common.pdb
+bin\Debug\facade.pdb

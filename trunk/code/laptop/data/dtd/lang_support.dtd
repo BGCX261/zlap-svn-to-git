@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT lang_support (lang*)>
+<!ELEMENT lang (id, name, abbreviate, url, flag, active)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT abbreviate (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT flag (#PCDATA)>
+<!ELEMENT active (#PCDATA)>

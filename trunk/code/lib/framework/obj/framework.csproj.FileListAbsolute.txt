@@ -1,0 +1,33 @@
+F:\sunglb\project_working\laptop\code\lib\framework\bin\Debug\framework.dll
+F:\sunglb\project_working\laptop\code\lib\framework\bin\Debug\framework.pdb
+F:\sunglb\project_working\laptop\code\lib\framework\bin\Debug\common.dll
+F:\sunglb\project_working\laptop\code\lib\framework\bin\Debug\facade.dll
+F:\sunglb\project_working\laptop\code\lib\framework\bin\Debug\dataaccess.dll
+F:\sunglb\project_working\laptop\code\lib\framework\bin\Debug\dataaccess.pdb
+F:\sunglb\project_working\laptop\code\lib\framework\bin\Debug\common.pdb
+F:\sunglb\project_working\laptop\code\lib\framework\bin\Debug\facade.pdb
+F:\sunglb\project_working\laptop\code\lib\framework\obj\Debug\ResolveAssemblyReference.cache
+F:\sunglb\project_working\laptop\code\lib\framework\obj\Debug\framework.dll
+F:\sunglb\project_working\laptop\code\lib\framework\obj\Debug\framework.pdb
+c:\data\project_working\laptop\code\lib\framework\bin\Debug\framework.dll
+c:\data\project_working\laptop\code\lib\framework\bin\Debug\framework.pdb
+c:\data\project_working\laptop\code\lib\framework\bin\Debug\common.dll
+c:\data\project_working\laptop\code\lib\framework\bin\Debug\facade.dll
+c:\data\project_working\laptop\code\lib\framework\bin\Debug\dataaccess.dll
+c:\data\project_working\laptop\code\lib\framework\bin\Debug\dataaccess.pdb
+c:\data\project_working\laptop\code\lib\framework\bin\Debug\common.pdb
+c:\data\project_working\laptop\code\lib\framework\bin\Debug\facade.pdb
+c:\data\project_working\laptop\code\lib\framework\obj\Debug\ResolveAssemblyReference.cache
+c:\data\project_working\laptop\code\lib\framework\obj\Debug\framework.dll
+c:\data\project_working\laptop\code\lib\framework\obj\Debug\framework.pdb
+D:\My Sourcecode\Website\laptop\code\lib\framework\bin\Debug\framework.dll
+D:\My Sourcecode\Website\laptop\code\lib\framework\bin\Debug\framework.pdb
+D:\My Sourcecode\Website\laptop\code\lib\framework\bin\Debug\common.dll
+D:\My Sourcecode\Website\laptop\code\lib\framework\bin\Debug\facade.dll
+D:\My Sourcecode\Website\laptop\code\lib\framework\bin\Debug\dataaccess.dll
+D:\My Sourcecode\Website\laptop\code\lib\framework\bin\Debug\dataaccess.pdb
+D:\My Sourcecode\Website\laptop\code\lib\framework\bin\Debug\common.pdb
+D:\My Sourcecode\Website\laptop\code\lib\framework\bin\Debug\facade.pdb
+D:\My Sourcecode\Website\laptop\code\lib\framework\obj\Debug\ResolveAssemblyReference.cache
+D:\My Sourcecode\Website\laptop\code\lib\framework\obj\Debug\framework.dll
+D:\My Sourcecode\Website\laptop\code\lib\framework\obj\Debug\framework.pdb

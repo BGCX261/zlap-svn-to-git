@@ -1,0 +1,7 @@
+bin\Debug\dataaccess.dll
+bin\Debug\dataaccess.pdb
+bin\Debug\common.dll
+bin\Debug\common.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\dataaccess.dll
+obj\Debug\dataaccess.pdb

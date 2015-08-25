@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+    <head>
+        <title>
+	        Barcode.dll - How to start
+        </title>
+<style type="text/css">
+body 
+{
+	background: #456988 url('background.png') repeat-x;
+	color: black;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.8em; 
+	text-align: center;
+	margin: 0;
+}
+#whiteContainer
+{
+	background-color: #fff;
+	color: #667;
+	text-align: left;
+	margin: 13px auto 0 auto;
+	padding: 13px 13px 39px 13px;
+	width: 800px;
+}
+a
+{
+	color: #267;
+	text-decoration: underline; 	
+}
+a:hover
+{
+	color: #9ab;
+	text-decoration: underline;
+}
+.question
+{
+	margin: 2px;
+	width: 90%;
+	font-size: 1.0em;
+	font-weight: bold;
+	color: #ff7202;
+}
+.answer
+{
+	width: 90%;
+	margin: 15px 0 15px 15px;
+/*.answertext	*/
+	padding: 1em;
+	background-color: #eee;	
+	color: #000;	
+}
+.code2
+{
+	font-size: small;
+	color: black;
+	font-family: Courier New, Courier, Monospace;
+	background-color: #ddd;
+	white-space: pre;
+	margin-top: 1em; 
+	padding: 1em;
+}
+.code
+{
+	font-size: small;
+	color: black;
+	font-family: Courier New , Courier, Monospace;
+	background-color: #ddd;
+	/*white-space: pre;*/
+	margin: 0em; 
+	padding: 1em;
+}
+.code pre 
+{ 
+	margin: 0em; 
+}
+.rem 
+{
+	color: #008000; 
+}
+.kwrd 
+{ 
+	color: #0000ff; 
+}
+.str 
+{ 
+	color: #800; 
+}
+.op 
+{ 
+	color: #0000c0; 
+}
+.preproc 
+{
+	color: #cc6633; 
+}
+.attr 
+{ 
+	color: #ff0000;
+}
+.alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+</style>
+</head>
+
+<body>
+    <div id="whiteContainer">
+    
+<h1>Barcode.dll - How to start</h1>
+<table>
+<tr>
+<td>
+    <img src="barcode_box3d_thumb.jpg" alt="Barcode.dll 3d box" /> 
+</td>
+<td>
+    <p>
+        Class reference, <strong>C# and VB examples</strong> were installed in your <strong>Start menu</strong>.
+    </p>
+    <p>
+        For frequent asked questions visit: <a href="http://www.lesnikowski.com/barcode/faq.aspx" target="_blank"> www.lesnikowski.com/barcode/faq.aspx</a> <br />
+    </p>
+    <p>
+        For ordering info goto: <a href="http://www.lesnikowski.com/barcode/buy.aspx" target="_blank">www.lesnikowski.com/barcode/buy.aspx</a>
+    </p>
+</td>
+</tr>
+</table>
+
+<div class="question">
+    How to use Barcode.dll?
+</div>
+<div class="answer">
+    If you want to display barcode in user interface use
+        Windows control or ASP.NET control
+    <br />
+    <br />
+    When you are printing barcode labels, use appropriate barcode class, as it will
+    be more efficient: First you have to add reference to Barcode.dll in your project
+    (see <a TARGET="_top" href="http://msdn2.microsoft.com/en-us/library/7314433t.aspx">MSDN How to</a>).
+    <pre class="code2"><span class="kwrd">using</span> Lesnikowski.Barcode;
+<span class="kwrd">using</span> System.Drawing.Imaging;
+
+<span class="rem">//...</span>
+
+BaseBarcode barcode = BarcodeFactory.GetBarcode(Symbology.EAN13);
+
+barcode.Number = <span class="str">"123456789012"</span>;
+barcode.ChecksumAdd = <span class="kwrd">true</span>;
+
+<span class="rem">// Render barcode:</span>
+<span class="kwrd">this</span>.pictureBox1.Image = barcode.Render();
+
+<span class="rem">// You can also save it to file:</span>
+barcode.Save(<span class="str">"c:\\barcode.gif"</span>, ImageFormat.Gif);
+</pre>
+        </div>
+
+
+
+        <div class="question">
+            ASP.NET control
+        </div>
+        <div class="answer">
+            <ol>
+                <li>Create new ASP.NET project</li>
+                <li>Add new <strong>web.config</strong> file if you don't have one.</li>
+                <li>Set up an HttpHandler in an ASP.NET web application - add the following code to
+                    your web.config file, inside the &lt;system.web&gt; section:
+                    <pre>  &lt;httpHandlers&gt;
+      &lt;add 
+        verb="*" 
+        path="Barcode.axd" 
+        type="Lesnikowski.Web.BarcodeHttpHandler"  /&gt;
+  &lt;/httpHandlers&gt;
+  </pre>
+                </li>
+                <li>If BarcodeControl is not present in the toolbox:
+                    <ul>
+                        <li>use the right mouse button on toolbox, </li>
+                        <li>click 'Choose items...' or 'Add/Remove Items' </li>
+                        <li>Find 'BarcodeControl' on '.NET Framework Components' tab or click 'Browse' and point
+                            'Barcode.dll' file</li>
+                    </ul>
+                </li>
+                <li><strong>Drag and drop</strong> BarcodeControl from toolbox to your webpage. This
+                    will add the reference to Barcode.dll to your project. </li>
+            </ol>
+        </div>
+
+
+
+        <div class="question">
+            Windows control
+        </div>
+        <div class="answer">
+            <ol>
+                <li>Create new WindowsForms project</li>
+                <li>If BarcodeControl is not present in the toolbox:
+                    <ul>
+                        <li>use the right mouse button on toolbox, </li>
+                        <li>click 'Choose items...' or 'Add/Remove Items' </li>
+                        <li>Find 'BarcodeControl' on '.NET Framework Components' tab or click 'Browse' and point
+                            'Barcode.dll' file</li>
+                    </ul>
+                </li>
+                <li><strong>Drag and drop</strong> BarcodeControl from toolbox to your Windows Form.
+                    This will add the reference to Barcode.dll to your project. </li>
+            </ol>
+        </div>
+    	<br />
+    </div>
+    <div>&nbsp;</div>
+  </body>
+</html>
